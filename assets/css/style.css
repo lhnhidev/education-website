@@ -1,0 +1,45 @@
+.header {
+
+}
+
+.header__top {
+    background-color: var(--dark-80-color);
+    color: var(--text-light-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top-sale {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.header__top-day {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.8rem;
+}
+
+.header__top-social {
+
+}
+
+.header__top-list {
+
+}
+
+.header__top-item {
+
+}
+
+.header__top-link {
+
+}
