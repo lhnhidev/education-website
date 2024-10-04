@@ -29,3 +29,18 @@ body {
     background-color: var(--color);
     z-index: -1;
 }
+
+/* TODO: CSS for scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track { /* TODO: CSS scrollbar empty*/
+    background-color: transparent;
+    opacity: .7;
+}
+
+body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}

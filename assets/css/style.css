@@ -3,12 +3,11 @@
     */
 
 .header {
+    position: sticky;
+    top: -60px;
+    left: 0;
+    right: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-body {
-    height: 100vh;
-    background-color: blue;
 }
 
 .header__top {
@@ -111,7 +110,7 @@ body {
 }
 
 .header__bottom-genre {
-    position: relative;
+
 }
 
 .header__bottom-genre > p:first-child {
