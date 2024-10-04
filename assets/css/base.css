@@ -44,3 +44,7 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     background-color: var(--primary-color);
     border-radius: 6px;
 }
+
+.hidden {
+    display: none;
+}
