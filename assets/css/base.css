@@ -80,3 +80,18 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     background-color: var(--white-30-color);
     transition: .3s;
 }
+
+/* TODO: CSS for title */
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+/* TODO: CSS for hr */
+.horizontal {
+    margin: auto;
+    width: 75%;
+}
