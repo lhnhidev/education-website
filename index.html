@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Website</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 <body>
     
     <!-- TODO: Header -->
-     <div class="header">
+    <div class="header">
 
         <!-- TODO: Header top -->
 
@@ -61,7 +61,7 @@
                         <img src="./assets/img/logo.svg" alt="logo">
                     </a>
                 </div>
-    
+
                 <div class="header__bottom-genre">
                     <p>Thể loại <i class="fa-solid fa-angle-down"></i></p>
                     <ul class="header__bottom-genre-list animate__animated animate__fadeInLeft">
@@ -82,14 +82,14 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="header__bottom-search">
                     <div class="header__bottom-search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <input type="text" class="header__bottom-input" placeholder="Tìm kiếm nội dung bất kỳ">
                 </div>
-    
+
                 <div class="header__bottom-cart">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
@@ -113,7 +113,7 @@
                 </li>
                 <li class="header__bottom-nav-item">
                     <a class="header__bottom-nav-link" href="#">Đăng ký</a>
-                 </li>
+                    </li>
             </ul>
 
             <button class="header__bottom-bar" id="barBtn">
@@ -133,7 +133,7 @@
                         <a class="header__bottom-link header__bottom-genre-link">Liên hệ</a>
                     </li>
                     <li class="header__bottom-item">
-                        <a class="header__bottom-link header__bottom-genre-link">Giỏ hàng</a>
+                        <a class="header__bottom-link header__bottom-genre-link cart">Giỏ hàng</a>
                     </li>
                     <li class="header__bottom-item">
                         <a class="header__bottom-link header__bottom-genre-link">Đăng nhập</a>
@@ -145,7 +145,160 @@
             </button>   
         </div>
 
-     </div>
+    </div>
+
+    <!-- TODO: Banner -->
+    <div class="banner" id="banner">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-xl-6 d-flex align-items-center">
+                    <div class="banner__content">
+                        <h2 class="banner__title">Become a software developer</h2>
+                        <p class="banner__desc">Pursue a new career and gain skills like agile and full stack development, Java, SQL, GenAI, and more—no prior experience required to get started.</p>
+
+                        <div class="banner__sign">
+                            <button class="button button-primary">Đăng ký ngay <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="button button-second">Học thử 7 ngày <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="banner__img">
+                        <img src="./assets/img/banner.png" alt="banner-img">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TODO: Partner -->
+    <section class="partner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h3 class="partner__title">
+                    Chúng tôi hợp tác với hơn
+                    <a class="partner__link" href="#">325 trường Đại học và công ty hàng đầu</a>
+                </h3>
+        
+                <div class="partner__imgs d-flex align-items-center justify-content-center">
+                    <img class="partner__img" src="./assets/img/partner-1.png" alt="partner-1">
+                    <img class="partner__img" src="./assets/img/partner-2.png" alt="partner-2">
+                    <img class="partner__img" src="./assets/img/partner-3.png" alt="partner-3">
+                    <img class="partner__img" src="./assets/img/partner-4.png" alt="partner-4">
+                    <img class="partner__img" src="./assets/img/partner-5.png" alt="partner-5">
+                    <img class="partner__img" src="./assets/img/partner-6.png" alt="partner-6">
+                    <img class="partner__img" src="./assets/img/partner-7.png" alt="partner-7">
+                    <img class="partner__img" src="./assets/img/partner-8.png" alt="partner-8">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="course">
+
+        <div class="container-fluid">
+            <h2 class="course__title">Các chứng chỉ hàng đầu</h2>
+            <p class="course__desc">Khám phá các chương trình phổ biến nhất của chúng tôi, sẵn sàng cho sự nghiệp đang được săn đón</p>
+    
+            <div class="course__main">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <a class="course__link">
+                            <div class="course__box-img">
+                                <img src="./assets/img/course-1.png" alt="course-1">
+                            </div>
+                            <div class="course__content">
+                                <div class="course__box-logo">
+                                    <img src="./assets/img/avatar-course-1.png" alt="avatar-1">
+                                    <p>DeepLearning.AI</p>
+                                </div>
+                                <p class="course__box-title">Deep Learning</p>
+                                <div class="course__box-desc">
+                                    <p class="course__box-type">
+                                        <i class="fa-solid fa-robot"></i>
+                                        Lập trình AI
+                                    </p>
+                                    <p class="course__box-level">Chứng chỉ chuyên nghiệp</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3">
+                        <a class="course__link">
+                            <div class="course__box-img">
+                                <img src="./assets/img/course-2.png" alt="course-1">
+                            </div>
+                            <div class="course__content">
+                                <div class="course__box-logo">
+                                    <img src="./assets/img/avatar-course-2.png" alt="avatar-2">
+                                    <p>IPM</p>
+                                </div>
+                                <p class="course__box-title">IPM AI developer</p>
+                                <div class="course__box-desc">
+                                    <p class="course__box-type">
+                                        <i class="fa-solid fa-robot"></i>
+                                        Lập trình AI
+                                    </p>
+                                    <p class="course__box-level">Chứng chỉ chuyên nghiệp</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3">
+                        <a class="course__link">
+                            <div class="course__box-img">
+                                <img src="./assets/img/course-3.png" alt="course-1">
+                            </div>
+                            <div class="course__content">
+                                <div class="course__box-logo">
+                                    <img src="./assets/img/avatar-course-3.png" alt="avatar-3">
+                                    <p>Google</p>
+                                </div>
+                                <p class="course__box-title">Google Data Analytics</p>
+                                <div class="course__box-desc">
+                                    <p class="course__box-type">
+                                        <i class="fa-solid fa-database"></i>
+                                        Khoa học dữ liệu
+                                    </p>
+                                    <p class="course__box-level">Chứng chỉ chuyên nghiệp</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3">
+                        <a class="course__link">
+                            <div class="course__box-img">
+                                <img src="./assets/img/course-4.png" alt="course-1">
+                            </div>
+                            <div class="course__content">
+                                <div class="course__box-logo">
+                                    <img src="./assets/img/avatar-course-4.png" alt="avatar-4">
+                                    <p>University of Michigan</p>
+                                </div>
+                                <p class="course__box-title">Python for Everybody</p>
+                                <div class="course__box-desc">
+                                    <p class="course__box-type">
+                                        <i class="fa-solid fa-code"></i>
+                                        Nền tảng lập trình
+                                    </p>
+                                    <p class="course__box-level">Chứng chỉ chuyên nghiệp</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 </html>

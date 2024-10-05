@@ -45,6 +45,38 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     border-radius: 6px;
 }
 
-.hidden {
-    display: none;
+/* TODO: CSS for button */
+.button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.button > i {
+    margin-left: 6px;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--white-100-color);
+    font-weight: 500;
+}
+
+.button-primary:hover {
+    background-color: var(--second-color);
+    transition: .3s;
+}
+
+.button-second {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    font-weight: 500;
+}
+
+.button-second:hover {
+    background-color: var(--white-30-color);
+    transition: .3s;
 }

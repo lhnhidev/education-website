@@ -78,6 +78,10 @@
     .header__bottom-input {
         min-width: 250px;
     }
+
+    .header__bottom-genre-link.cart {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 576.98px) {
