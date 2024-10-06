@@ -551,16 +551,8 @@
     padding: 100px 0px;
 }
 
-.teach__img {
-
-}
-
 .teach__img > img {
     width: 80%;
-}
-
-.teach__content {
-
 }
 
 .teach__title {
@@ -575,10 +567,46 @@
     text-align: justify;
 }
 
-.teach__btn {
-
+    /* TODO: Response */
+.response {
+    padding: 100px 0px;
 }
 
-.teach__join {
+.response__title {
+    margin-bottom: 20px;
+}
 
+.response__desc {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 500;
+    opacity: .8;
+    margin-bottom: 55px;
+}
+
+.response__name {
+    margin-top: 25px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.response__country {
+    font-size: 1.6rem;
+    opacity: .8;
+    margin: 0;
+}
+
+.response__horizontal {
+    width: 60px;
+    height: 2px;
+    margin: 20px 0px;
+    background-color: var(--primary-color);
+}
+
+.response__message {
+    padding: 0px 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
