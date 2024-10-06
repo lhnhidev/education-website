@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">  
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+    
+    <!-- TODO: Header -->
+     <div class="header">
+
+        <!-- TODO: Header top -->
+
+        <div class="header__top container-fluid">
+            <p class="header__top-sale">
+                Siêu sale Black Friday ! Chỉ còn 
+                <span class="header__top-day skew" style="--deg: -16deg; --color: var(--primary-color);">10</span>
+                ngày !!!
+            </p>
+
+            <div class="header__top-social">
+                Theo dõi chúng tôi: 
+                <ul class="header__top-list">
+                    <li class="header__top-item">
+                        <a href="#" class="header__top-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-item">
+                        <a href="#" class="header__top-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-item">   
+                        <a href="#" class="header__top-link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="header__top-item">
+                        <a href="#" class="header__top-link">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TODO: Header bottom -->
+        <div class="header__bottom container-fluid">
+            <div class="header__bottom-section">
+                <div class="header__bottom-logo">
+                    <a href="#">
+                        <img src="../assets/img/logo.svg" alt="logo">
+                    </a>
+                </div>
+    
+                <div class="header__bottom-genre">
+                    <p>Thể loại <i class="fa-solid fa-angle-down"></i></p>
+                    <ul class="header__bottom-genre-list animate__animated animate__fadeInLeft">
+                        <li class="header__bottom-genre-item">
+                            <a href="#" class="header__bottom-genre-link">Front End <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li class="header__bottom-genre-item">
+                            <a href="#" class="header__bottom-genre-link">Back End <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li class="header__bottom-genre-item">
+                            <a href="#" class="header__bottom-genre-link">Fullstack <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li class="header__bottom-genre-item">
+                            <a href="#" class="header__bottom-genre-link">Devops <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                        <li class="header__bottom-genre-item">
+                            <a href="#" class="header__bottom-genre-link">Other <i class="fa-solid fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="header__bottom-search">
+                    <div class="header__bottom-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" class="header__bottom-input" placeholder="Tìm kiếm nội dung bất kỳ">
+                </div>
+    
+                <div class="header__bottom-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+            <ul class="header__bottom-nav">
+                <li class="header__bottom-nav-item">
+                    <a class="header__bottom-nav-link" href="../index.html">Trang chủ</a>
+                </li>
+                <li class="header__bottom-nav-item">
+                    <a class="header__bottom-nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="header__bottom-nav-item">
+                    <a class="header__bottom-nav-link" href="#">Sản phẩm</a>
+                </li>
+                <li class="header__bottom-nav-item">
+                    <a class="header__bottom-nav-link" href="contact.html">Liên hệ</a>
+                </li>
+                <li class="header__bottom-nav-item">
+                    <a class="header__bottom-nav-link" href="#">Đăng nhập</a>
+                </li>
+                <li class="header__bottom-nav-item">
+                    <a class="header__bottom-nav-link" href="#">Đăng ký</a>
+                 </li>
+            </ul>
+
+            <button class="header__bottom-bar" id="barBtn">
+                <i class="fa-solid fa-bars"></i>
+
+                <ul class="header__bottom-list header__bottom-genre-list animate__animated animate__fadeInRight">
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Trang chủ</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Giới thiệu</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Sản phẩm</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Liên hệ</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Giỏ hàng</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Đăng nhập</a>
+                    </li>
+                    <li class="header__bottom-item">
+                        <a class="header__bottom-link header__bottom-genre-link">Đăng ký</a>
+                    </li>
+                </ul>
+            </button>   
+        </div>
+
+     </div>
+    <div class="contact">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 d-flex align-items-center">
+                    <div class="contact__body">
+                        <h2 class="contact__text-heading">Liên hệ với chúng tôi</h2>
+                        <div class="contact__text-body">
+                            <!-- <p class="">
+                                Sói cô độc luôn lắng nghe và tiếp nhận mọi ý kiến ​đóng góp của bạn. Hãy liên hệ với chúng mình bằng cách điền thông tin vào form dưới đây. Chúng mình sẽ phản hồi bạn trong thời gian sớm nhất.
+                            </p> -->
+                        </div>
+                        <div class="form">
+                            <form action="" method="post">
+                                <div class="form__group field">
+                                    <input type="text" class="form__field name" placeholder="Họ và tên" required="true">
+                                    <label for="name" class="form__label">Họ và tên</label>
+                                </div>
+                                <div class="form__group field">
+                                    <input type="text" class="form__field email" placeholder="Email" required="true">
+                                    <label for="name" class="form__label">Email</label>
+                                </div>
+                                <div class="form__group field">
+                                    <input type="text" class="form__field" placeholder="Số điện thoại" required="true">
+                                    <label for="name" class="form__label">Số điện thoại</label>
+                                </div>
+                                <div class="form__content">
+                                    <label class="form__content-lable">Nội dung</label>
+                                    <div class="form__content-input">
+                                        <textarea rows="4" name="" id="" placeholder="Nhập nội dung liên hệ..." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__botton-submit">
+                                    <button class="botton-submit" type="submit">
+                                        <span class="botton-submit-title">GỬI ĐI</span>
+                                    </button>
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="contact__img">
+                        <img src="../assets/img/contact-1.jpg" alt="contact">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+</body>
+</html>
