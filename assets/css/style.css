@@ -499,7 +499,7 @@
 }
 
 .student__content {
-    width: 90%;
+    width: calc(100% - 20px);
     margin-bottom: 30px;
 }
 
@@ -521,7 +521,8 @@
 }
 
 .student__more,
-.student__join {
+.student__join,
+.teach__join {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -543,4 +544,41 @@
 
 .student__img > img {
     width: 100%;
+}
+
+    /* TODO: Teach */
+.teach {
+    padding: 100px 0px;
+}
+
+.teach__img {
+
+}
+
+.teach__img > img {
+    width: 80%;
+}
+
+.teach__content {
+
+}
+
+.teach__title {
+    text-align: left;
+    width: calc(100% - 20px);
+    margin-bottom: 25px;
+}
+
+.teach__desc {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.teach__btn {
+
+}
+
+.teach__join {
+
 }
