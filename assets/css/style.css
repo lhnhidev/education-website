@@ -297,8 +297,8 @@
 
 }
 
-.banner__img {
-
+.banner__img > img {
+    width: 100%;
 }
 
     /* TODO: Partner section */
@@ -354,6 +354,7 @@
     text-decoration: none;
     font-size: 1.3rem;
     color: var(--dark-80-color);
+    margin-bottom: 15px;
 }
 
 .course__link:hover {
@@ -609,4 +610,57 @@
     text-align: center;
     font-size: 1.8rem;
     line-height: 1.8;
+}
+
+    /* TODO: Footer */
+.footer {
+    padding: 80px 0px 60px 0px;
+    background-color: var(--dark-60-color);
+}
+
+.footer__img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer__box {
+    color: var(--primary-color);
+    padding: 0px 10px;
+}
+
+.footer__box .footer__img:last-child {
+    margin-top: 25px;
+}
+
+.footer__title {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.footer__desc {
+    font-size: 1.4rem;
+    color: var(--white-100-color);
+    margin-bottom: 10px;
+    opacity: .8;
+}
+
+.footer__list {
+    padding: 0;
+    margin: 20px 0px 0px 0px;
+    list-style-type: none;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--white-100-color);
+    opacity: .8;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
