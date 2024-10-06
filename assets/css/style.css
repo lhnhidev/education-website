@@ -335,7 +335,7 @@
 
     /* TODO: Course */
 .course {
-    padding: 40px 0px;
+    padding: 100px 0px;
 }
 
 .course__desc {
@@ -428,7 +428,7 @@
 
     /* TODO: TOPIC */
 .topic {
-    padding: 40px 0px;
+    padding: 100px 0px;
 }
 
 .topic__title {
@@ -483,4 +483,64 @@
     font-size: 1.3rem;
     font-weight: 500;
     opacity: .7;
+}
+
+    /* TODO: Student */
+.student {
+    padding: 100px 0px;
+}
+
+.student__logo {
+    margin-bottom: 20px;
+}
+
+.student__logo > img {
+    width: 160px;
+}
+
+.student__content {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.student__title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.student__list {
+    font-size: 2rem;
+}
+
+.student__item {
+    margin-bottom: 15px;
+}
+
+.student__btn {
+
+}
+
+.student__more,
+.student__join {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.student__more {
+    border: 1px solid var(--primary-color);
+}
+
+.student__more > i {
+    margin-left: 5px;
+}
+
+.student__img {
+
+}
+
+.student__img > img {
+    width: 100%;
 }
