@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+/*Class dùng chung*/
+.button_buy-primary-color {
+    background-color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+.button_buy-primary-color:hover {
+    background-color: var(--primary-color);
+}
+
+/*Class dùng chung*/
+
+
+.product {
+    color: rgb(112, 110, 110); /* Màu xám nhạt */
+    font-size: 1rem;
+    width: 35rem;
+    padding: 0 !important ;
+    border-radius: 3%;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm transition cho hiệu ứng mượt mà */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Phóng to 5% khi hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Thêm bóng cho card */
+    cursor: pointer;
+}
+
+
+.product__body {
+    padding: 16px;
+}
+
+.product__body .card-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.product,.product__detail li {
+    border: none;
+    padding: 8px 16px;
+    background: #ffffff;
+}
+
+.product__buy span {
+    font-size: 30px;
+}
+
+.product__price {
+    font-weight: 500 !important;
+    color: var(--primary-color);
+}
+
+.buy_element {
+   padding: 6px 12px;
+}
+
+.buy_element.active {
+    
+    border: none;
+    background-color: white !important;
+}
+
+

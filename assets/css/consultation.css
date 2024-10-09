@@ -1,0 +1,52 @@
+.consultation {
+    background-image: url('../img/subscribe-bg.svg');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 50vh;
+}
+
+.consultation > h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 3.5rem;
+    top: 25%;
+}
+
+.consultation > p {
+    color: var(--dark-80-color);
+    font-size: 2rem;
+    top: 40%;
+}
+
+.consultation__form {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+}
+.consultation__form input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+}
+.custom-button {
+    background: linear-gradient(to right, #003366, #00ccff);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.custom-button:hover {
+    background: linear-gradient(to right, #00ccff, #003366);
+}
+.custom-button i {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+.custom-button:hover i {
+    transform: translateX(10px);
+}

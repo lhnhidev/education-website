@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/root.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/product.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+    <link rel="stylesheet" href="../assets/css/nav.css" />
+    <link rel="stylesheet" href="../assets/css/consultation.css" />
+  </head>
+
+  <body style="background-color: var(--white-30-color)">
+    <!-- TODO: Header -->
+    <div class="header mb-5 nav__product">
+      <!-- TODO: Header top -->
+
+      <div class="header__top container-fluid">
+        <p class="header__top-sale">
+          Siêu sale Black Friday ! Chỉ còn
+          <span
+            class="header__top-day skew"
+            style="--deg: -16deg; --color: var(--primary-color)"
+            >10</span
+          >
+          ngày !!!
+        </p>
+
+        <div class="header__top-social">
+          Theo dõi chúng tôi:
+          <ul class="header__top-list">
+            <li class="header__top-item">
+              <a class="header__top-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="header__top-item">
+              <a class="header__top-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="header__top-item">
+              <a class="header__top-link">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li class="header__top-item">
+              <a class="header__top-link">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TODO: Header bottom -->
+      <div class="header__bottom container-fluid">
+        <div class="header__bottom-section">
+          <div class="header__bottom-logo">
+            <a href="#">
+              <img src="../assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="header__bottom-genre">
+            <p>Thể loại <i class="fa-solid fa-angle-down"></i></p>
+            <ul
+              class="header__bottom-genre-list animate__animated animate__fadeInLeft"
+            >
+              <li class="header__bottom-genre-item">
+                <a href="#" class="header__bottom-genre-link"
+                  >Front End <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="header__bottom-genre-item">
+                <a href="#" class="header__bottom-genre-link"
+                  >Back End <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="header__bottom-genre-item">
+                <a href="#" class="header__bottom-genre-link"
+                  >Fullstack <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="header__bottom-genre-item">
+                <a href="#" class="header__bottom-genre-link"
+                  >Devops <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+              <li class="header__bottom-genre-item">
+                <a href="#" class="header__bottom-genre-link"
+                  >Other <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__bottom-search">
+            <div class="header__bottom-search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input
+              type="text"
+              class="header__bottom-input"
+              placeholder="Tìm kiếm nội dung bất kỳ"
+            />
+          </div>
+
+          <div class="header__bottom-cart">
+            <!-- Icon giỏ hàng -->
+            <i class="fa-solid fa-cart-shopping"
+              ><span><span class="header__bottom-icon-count">0</span></span>
+            </i> 
+            <!-- Dropdown menu -->
+            <ul
+              class="dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
+              aria-labelledby="cartDropdown"
+            >
+              <h5 class="dropdown-header">Sản phẩm đã chọn</h5>
+              <ul class="list-group" id="cart-items">
+                <!-- Nội dung sản phẩm sẽ được thêm vào đây -->
+              </ul>
+              <div class="dropdown-divider"></div>
+              <button
+                class="btn btn-block button_buy-primary-color"
+                style="color: white; width: 100%"
+                
+                onclick="location.href= 'cart.html';"
+                id="checkout-btn"
+              >
+                Thanh toán
+              </button>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="header__bottom-nav">
+          <li class="header__bottom-nav-item">
+            <a class="header__bottom-nav-link" href="../index.html">Trang chủ</a>
+          </li>
+          <li class="header__bottom-nav-item">
+            <a class="header__bottom-nav-link" href="#">Giới thiệu</a>
+          </li>
+          <li class="header__bottom-nav-item">
+            <a class="header__bottom-nav-link" href="./product.html">Sản phẩm</a>
+          </li>
+          <li class="header__bottom-nav-item">
+            <a class="header__bottom-nav-link" href="./contact.html">Liên hệ</a>
+          </li>
+          <li class="header__bottom-nav-item">
+            <a class="header__bottom-nav-link" href="./login.html">Đăng nhập</a>
+          </li>
+          <li class="header__bottom-nav-item">
+            <a class="header__bottom-nav-link" href="./register.html">Đăng ký</a>
+          </li>
+        </ul>
+
+        <button class="header__bottom-bar" id="barBtn">
+          <i class="fa-solid fa-bars"></i>
+
+          <ul
+            class="header__bottom-list header__bottom-genre-list animate__animated animate__fadeInRight"
+          >
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Giới thiệu</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Sản phẩm</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Liên hệ</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Giỏ hàng</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Đăng nhập</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a class="header__bottom-link header__bottom-genre-link"
+                >Đăng ký</a
+              >
+            </li>
+          </ul>
+        </button>
+      </div>
+    </div>
+    <!--Product-->
+    <div id="product-container" class="container">
+      <!--Code sinh ra ở product.js line 120-->
+    </div>
+    <!--Consultation-->
+    <div class="mt-5 mb-5 p-0 container">
+      <div class="d-flex justify-content-center position-relative consultation">
+        <h2 class="position-absolute">Gửi yêu cầu tư vấn miễn phí</h2>
+        <p class="position-absolute">
+          Vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ tư vấn bạn trong
+          thời gian sớm nhất.
+        </p>
+        <form class="consultation__form align-self-end mb-5">
+          <input
+            type="tel"
+            class="consultation_input"
+            placeholder="Số điện thoại..."
+          />
+          <button class="btn btn-primary custom-button">
+            Đăng ký <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!--JS-->
+    <script src="../assets/js/product.js"></script>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+
+                <div class="footer__box">
+                    <img src="../assets/img/logo.svg" alt="logo" class="footer__img">
+                    <div class="footer__content">
+                        <p class="footer__desc">Điện thoại: 08 8989 8989</p>
+                        <p class="footer__desc">
+                            Email: <a href="#">contact@course.edu.vn</a>
+                        </p>
+                        <p class="footer__desc">Địa chỉ: Số 999, ngõ 888, Đường Bãi Cát, Quận Bãi Biển, Tỉnh Đại Dương</p>
+                    </div>
+                    <img src="../assets/img/copy-write.png" alt="copy-write" class="footer__img">
+                </div>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+
+                <div class="footer__box">
+                    <h2 class="footer__title">Thông tin Course</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="../index.html" class="footer__link">Trang chủ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="product.html" class="footer__link">Sản phẩm</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./contact.html" class="footer__link">Liên hệ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+
+                <div class="footer__box">
+                    <h2 class="footer__title">Khóa học nổi bật</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Lập trình AI</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Phát triển phần mềm</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Lập trình IoT</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Fullstack</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Backend Developer</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+
+                <div class="footer__box">
+                    <h2 class="footer__title">Công ty cổ phần công nghệ giáo dục Course</h2>
+                    <ul class="footer__list">
+                        <li class="footer__desc">
+                            Mã số thuế: 999999999
+                        </li>
+                        <li class="footer__desc">
+                            Ngày thành lập: 06/10/2024
+                        </li>
+                        <li class="footer__desc">
+                            Lĩnh vực hoạt động: Giáo dục, công nghệ - lập trình. Chúng tôi tập trung xây dựng và phát triển các sản phẩm mang lại giá trị cho cộng đồng lập trình viên Việt Nam.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</footer>
+</html>

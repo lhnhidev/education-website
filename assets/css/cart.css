@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product__price {
+    font-weight: bold;
+}
+
+#cart-items {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.header__bottom-dropmenu {
+    width: 25vw;
+}
