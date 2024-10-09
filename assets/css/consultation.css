@@ -4,17 +4,18 @@
     width: 100%;
     background-position: center;
     height: 50vh;
+    border-radius: 10px;
 }
 
 .consultation > h2 {
-    color: var(--primary-color);
+    color: var(--white-100-color);
     font-weight: 600;
     font-size: 3.5rem;
     top: 25%;
 }
 
 .consultation > p {
-    color: var(--dark-80-color);
+    color: var(--white-100-color);
     font-size: 2rem;
     top: 40%;
 }

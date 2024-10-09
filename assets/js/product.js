@@ -397,9 +397,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCartItems() {
-  // const cartContainer = document.getElementById("cart-container");
-
-  // cartContainer.innerHTML = "";
 
   let cartItemsHTML = "";
 
@@ -434,7 +431,7 @@ function displayCartItems() {
   });
 
 
-  document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(function () {
     const cartContainer = document.getElementById("cart-container");
 
     cartContainer.innerHTML = "";
@@ -459,7 +456,7 @@ function displayCartItems() {
           </div>
           ${totalHTML}
         </div>`;
-    });
+    }, 500);
   
 }
 

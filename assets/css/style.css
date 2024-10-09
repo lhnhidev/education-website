@@ -278,9 +278,6 @@ body {
 }
 
     /* TODO: Banner */
-.banner {
-
-}
 
 .banner__content {
     margin-left: 60px;
@@ -296,10 +293,6 @@ body {
     margin-top: 15px;;
     margin-bottom: 15px;;
     font-size: 1.8rem;
-}
-
-.banner__sign {
-
 }
 
 .banner__img > img {
@@ -414,10 +407,6 @@ body {
     margin: 8px 0px 14px 0px;
 }
 
-.course__box-desc {
-    
-}
-
 .course__box-desc p:first-child {
     color: var(--primary-color);
     margin-bottom: 3px;
@@ -522,10 +511,6 @@ body {
     margin-bottom: 15px;
 }
 
-.student__btn {
-
-}
-
 .student__more,
 .student__join,
 .teach__join {
@@ -542,10 +527,6 @@ body {
 
 .student__more > i {
     margin-left: 5px;
-}
-
-.student__img {
-
 }
 
 .student__img > img {
