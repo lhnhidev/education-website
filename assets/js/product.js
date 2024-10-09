@@ -397,38 +397,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCartItems() {
-  const cartContainer = document.getElementById("cart-container");
-  cartContainer.innerHTML = ""; // Xóa nội dung cũ nếu có
+  // const cartContainer = document.getElementById("cart-container");
+
+  // cartContainer.innerHTML = "";
 
   let cartItemsHTML = "";
   products.forEach((product) => {
     cartItemsHTML += `
-        <div class="row mb-3 d-flex">
-  <div class="col-12">
-    <div class="row cart__des align-items-center">
-      <div class="col-xl-2 col-md-3 col-4">
-        <img src="${product.image}" alt="${
-      product.name
-    }" class="img-fluid w-100">
-      </div>
-      <div class="col-xl-4 col-md-5 col-8 mt-3 mt-md-0 cart-container__detail__Product">
-        <h3 class="h5">${product.name}</h3>
-        <p>Số lượng: ${product.quantity}</p>
-      </div>
-      <div class="col-xl-3 col-md-4 col-6 mt-3 mt-md-0">
-        <button onclick="removeProduct('${
-          product.name
-        }')" class="btn btn-block button_buy-primary-color text-white">XÓA KHỎI GIỎ HÀNG</button>
-      </div>
-      <div class="col-xl-3 col-md-12 col-6 text-md-end mt-3 mt-xl-0">
-        <span>${product.price.toLocaleString()} VND</span>
-        <i class="fa-solid fa-tag" style="color: var(--primary-color)"></i>
-      </div>
-    </div>
-  </div>
-</div>
-`;
+                <div class="row mb-3 d-flex">
+          <div class="col-12">
+            <div class="row cart__des align-items-center">
+              <div class="col-xl-2 col-md-3 col-4">
+                <img src="${product.image}" alt="${
+              product.name
+            }" class="img-fluid w-100">
+              </div>
+              <div class="col-xl-4 col-md-5 col-8 mt-3 mt-md-0 cart-container__detail__Product">
+                <h3 class="h5">${product.name}</h3>
+                <p>Số lượng: ${product.quantity}</p>
+              </div>
+              <div class="col-xl-3 col-md-4 col-6 mt-3 mt-md-0">
+                <button onclick="removeProduct('${
+                  product.name
+                }')" class="btn btn-block button_buy-primary-color text-white">XÓA KHỎI GIỎ HÀNG</button>
+              </div>
+              <div class="col-xl-3 col-md-12 col-6 text-md-end mt-3 mt-xl-0">
+                <span>${product.price.toLocaleString()} VND</span>
+                <i class="fa-solid fa-tag" style="color: var(--primary-color)"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
   });
+
+  const cartContainer = document.getElementById("cart-container");
+
+  cartContainer.innerHTML = "";
 
   // Tính tổng giá sản phẩm và đặt bố cục 9-3
   const totalPrice = products.reduce(

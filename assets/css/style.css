@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
     /*
         TODO: Header top
     */
@@ -151,10 +155,11 @@
 .header__bottom-genre-list::before {
     content: "";
     display: block;
-    width: inherit;
-    height: 20px;
-    top: -20px;
+    width: 123px;
+    height: 62px;
+    top: -60px;
     position: absolute;
+    right: 0;
 }
 
 .header__bottom-genre-link {
