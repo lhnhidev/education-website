@@ -402,6 +402,8 @@ function displayCartItems() {
   // cartContainer.innerHTML = "";
 
   let cartItemsHTML = "";
+
+  
   products.forEach((product) => {
     cartItemsHTML += `
                 <div class="row mb-3 d-flex">
@@ -431,30 +433,34 @@ function displayCartItems() {
         `;
   });
 
-  const cartContainer = document.getElementById("cart-container");
 
-  cartContainer.innerHTML = "";
+  document.addEventListener('DOMContentLoaded', function () {
+    const cartContainer = document.getElementById("cart-container");
 
-  // Tính tổng giá sản phẩm và đặt bố cục 9-3
-  const totalPrice = products.reduce(
-    (total, product) => total + product.price * product.quantity,
-    0
-  );
-  const totalHTML = `
-      <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
-        <h3>Tổng Tiền: </h3>
-        <h2>${totalPrice.toLocaleString()} VND</h2>
-        <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
-      </div>`;
+    cartContainer.innerHTML = "";
 
-  // Chèn cả sản phẩm và phần tổng vào trong một row chính
-  cartContainer.innerHTML = `
-      <div class="row">
-        <div class="col-xl-9 col-md-6 col-12 cart-container__detail">
-          ${cartItemsHTML}
-        </div>
-        ${totalHTML}
-      </div>`;
+    // Tính tổng giá sản phẩm và đặt bố cục 9-3
+    const totalPrice = products.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0
+    );
+    const totalHTML = `
+        <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
+          <h3>Tổng Tiền: </h3>
+          <h2>${totalPrice.toLocaleString()} VND</h2>
+          <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
+        </div>`;
+
+    // Chèn cả sản phẩm và phần tổng vào trong một row chính
+    cartContainer.innerHTML = `
+        <div class="row">
+          <div class="col-xl-9 col-md-6 col-12 cart-container__detail">
+            ${cartItemsHTML}
+          </div>
+          ${totalHTML}
+        </div>`;
+    });
+  
 }
 
 //Thanh toán sản phẩm 
