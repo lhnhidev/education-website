@@ -39,14 +39,16 @@
 }
 
 .product__body .card-title {
-    font-size: 1.5rem;
+    font-size: 2rem !important;
+    font-weight: 600;
     color: var(--primary-color);
 }
 
-.product,.product__detail li {
+.product, .product__detail li {
     border: none;
     padding: 8px 16px;
     background: #ffffff;
+    font-size: 1.6rem;
 }
 
 .product__buy span {
@@ -67,5 +69,4 @@
     border: none;
     background-color: white !important;
 }
-
 

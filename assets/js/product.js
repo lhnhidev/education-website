@@ -397,10 +397,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCartItems() {
-
   let cartItemsHTML = "";
-
-  
   products.forEach((product) => {
     cartItemsHTML += `
                 <div class="row mb-3 d-flex">
@@ -429,8 +426,6 @@ function displayCartItems() {
         </div>
         `;
   });
-
-
   setTimeout(function () {
     const cartContainer = document.getElementById("cart-container");
 

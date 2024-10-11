@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="../assets/css/consultation.css" />
   </head>
 
-  <body style="background-color: var(--white-30-color);">
+  <body style="background-color: var(--white-30-color)">
     <!-- TODO: Header -->
     <div class="header mb-5 nav__product">
       <!-- TODO: Header top -->
@@ -131,7 +131,7 @@
             <!-- Icon giỏ hàng -->
             <i class="fa-solid fa-cart-shopping"
               ><span><span class="header__bottom-icon-count">0</span></span>
-            </i>
+            </i> 
             <!-- Dropdown menu -->
             <ul
               class="dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
@@ -143,9 +143,10 @@
               </ul>
               <div class="dropdown-divider"></div>
               <button
-                class="btn btn-block button_buy-primary-color miniCart__thanhToan"
+                class="btn btn-block button_buy-primary-color"
+                style="color: white; width: 100%"
                 
-                onclick="location.href= './cart.html';"
+                onclick="location.href= 'cart.html';"
                 id="checkout-btn"
               >
                 Thanh toán
@@ -179,44 +180,44 @@
           <i class="fa-solid fa-bars"></i>
 
           <ul
-            class="header__bottom-list header__bottom-genre-list animate__animated animate__fadeInRight"
-          >
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Trang chủ</a
+                class="header__bottom-list header__bottom-genre-list animate__animated animate__fadeInRight"
               >
-            </li>
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Giới thiệu</a
-              >
-            </li>
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Sản phẩm</a
-              >
-            </li>
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Liên hệ</a
-              >
-            </li>
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Giỏ hàng</a
-              >
-            </li>
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Đăng nhập</a
-              >
-            </li>
-            <li class="header__bottom-item">
-              <a class="header__bottom-link header__bottom-genre-link"
-                >Đăng ký</a
-              >
-            </li>
-          </ul>
+                <li class="header__bottom-item">
+                  <a href="../index.html" class="header__bottom-link header__bottom-genre-link"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li class="header__bottom-item">
+                  <a href="#" class="header__bottom-link header__bottom-genre-link"
+                    >Giới thiệu</a
+                  >
+                </li>
+                <li class="header__bottom-item">
+                  <a href="product.html" class="header__bottom-link header__bottom-genre-link" 
+                    >Sản phẩm</a
+                  >
+                </li>
+                <li class="header__bottom-item">
+                  <a href="contact.html" class="header__bottom-link header__bottom-genre-link"
+                    >Liên hệ</a
+                  >
+                </li>
+                <li class="header__bottom-item">
+                  <a href="cart.html" class="header__bottom-link header__bottom-genre-link"
+                    >Giỏ hàng</a
+                  >
+                </li>
+                <li class="header__bottom-item">
+                  <a href="login.html" class="header__bottom-link header__bottom-genre-link"
+                    >Đăng nhập</a
+                  >
+                </li>
+                <li class="header__bottom-item">
+                  <a href="register.html" class="header__bottom-link header__bottom-genre-link"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
         </button>
       </div>
     </div>
@@ -227,8 +228,8 @@
     <!--Consultation-->
     <div class="mt-5 mb-5 p-0 container">
       <div class="d-flex justify-content-center position-relative consultation">
-        <h2 class="position-absolute text-center my-5">Gửi yêu cầu tư vấn miễn phí</h2>
-        <p class="position-absolute text-center my-5">
+        <h2 class="position-absolute">Gửi yêu cầu tư vấn miễn phí</h2>
+        <p class="position-absolute">
           Vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ tư vấn bạn trong
           thời gian sớm nhất.
         </p>
@@ -280,22 +281,22 @@
                 <div class="footer__box">
                     <h2 class="footer__title">Thông tin Course</h2>
                     <ul class="footer__list">
-                      <li class="footer__item">
-                          <a href="../index.html" class="footer__link">Trang chủ</a>
-                      </li>
-                      <li class="footer__item">
-                          <a href="#" class="footer__link">Giới thiệu</a>
-                      </li>
-                      <li class="footer__item">
-                          <a href="product.html" class="footer__link">Sản phẩm</a>
-                      </li>
-                      <li class="footer__item">
-                          <a href="./contact.html" class="footer__link">Liên hệ</a>
-                      </li>
-                      <li class="footer__item">
-                          <a href="#" class="footer__link">Điều khoản</a>
-                      </li>
-                  </ul>
+                        <li class="footer__item">
+                            <a href="../index.html" class="footer__link">Trang chủ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="product.html" class="footer__link">Sản phẩm</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="./contact.html" class="footer__link">Liên hệ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Điều khoản</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>

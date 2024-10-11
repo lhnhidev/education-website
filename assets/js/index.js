@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //Danh sách obj để nhập thông tin vào card
 const productList = [
   {
-    image: "assets/img/fullstack_thumb_500.jpg",
+    image: "../assets/img/fullstack_thumb_500.jpg",
     reviews: 180,
     lectures: 95,
     students: 32,
@@ -26,7 +26,7 @@ const productList = [
     name: "Lập trình Fullstack",
   },
   {
-    image: "assets/img/card2.png",
+    image: "../assets/img/card2.png",
     reviews: 258,
     lectures: 40,
     students: 80,
@@ -37,7 +37,7 @@ const productList = [
     name: "Lập trình C++ Cơ bản tới nâng cao",
   },
   {
-    image: "assets/img/card3.png",
+    image: "../assets/img/card3.png",
     reviews: 326,
     lectures: 50,
     students: 42,
@@ -48,7 +48,7 @@ const productList = [
     name: "Lập trình C++ Nâng cao",
   },
   {
-    image: "assets/img/card4.png",
+    image: "../assets/img/card4.png",
     reviews: 290,
     lectures: 42,
     students: 60,
@@ -59,7 +59,7 @@ const productList = [
     name: "Cấu trúc dữ liệu và Giải thuật",
   },
   {
-    image: "assets/img/card5.png",
+    image: "../assets/img/card5.png",
     reviews: 268,
     lectures: 65,
     students: 30,
@@ -70,7 +70,7 @@ const productList = [
     name: "Lập Trình Thi Đấu",
   },
   {
-    image: "assets/img/card6.png",
+    image: "../assets/img/card6.png",
     reviews: 215,
     lectures: 36,
     students: 50,
@@ -81,7 +81,7 @@ const productList = [
     name: "Lập trình Java và SQL",
   },
   {
-    image: "assets/img/card7.jpg",
+    image: "../assets/img/card7.jpg",
     reviews: 286,
     lectures: 52,
     students: 36,
@@ -92,7 +92,7 @@ const productList = [
     name: "Lập trình Front-end(Mới)",
   },
   {
-    image: "assets/img/card8.png",
+    image: "../assets/img/card8.png",
     reviews: 350,
     lectures: 50,
     students: 36,
@@ -103,7 +103,7 @@ const productList = [
     name: "Lập trình Back-ends NodeJS",
   },
   {
-    image: "assets/img/card9.png",
+    image: "../assets/img/card9.png",
     reviews: 123,
     lectures: 42,
     students: 29,
@@ -398,59 +398,62 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayCartItems() {
-  const cartContainer = document.getElementById("cart-container");
-  cartContainer.innerHTML = ""; // Xóa nội dung cũ nếu có
-
-  let cartItemsHTML = "";
+  let cartItemsHTML = ""; 
   products.forEach((product) => {
     cartItemsHTML += `
-        <div class="row mb-3 d-flex">
-  <div class="col-12">
-    <div class="row cart__des align-items-center">
-      <div class="col-xl-2 col-md-3 col-4">
-        <img src="${product.image}" alt="${
-      product.name
-    }" class="img-fluid w-100">
-      </div>
-      <div class="col-xl-4 col-md-5 col-8 mt-3 mt-md-0 cart-container__detail__Product">
-        <h3 class="h5">${product.name}</h3>
-        <p>Số lượng: ${product.quantity}</p>
-      </div>
-      <div class="col-xl-3 col-md-4 col-6 mt-3 mt-md-0">
-        <button onclick="removeProduct('${
-          product.name
-        }')" class="btn btn-block button_buy-primary-color text-white">XÓA KHỎI GIỎ HÀNG</button>
-      </div>
-      <div class="col-xl-3 col-md-12 col-6 text-md-end mt-3 mt-xl-0">
-        <span>${product.price.toLocaleString()} VND</span>
-        <i class="fa-solid fa-tag" style="color: var(--primary-color)"></i>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-  });
-
-  // Tính tổng giá sản phẩm và đặt bố cục 9-3
-  const totalPrice = products.reduce(
-    (total, product) => total + product.price * product.quantity,
-    0
-  );
-  const totalHTML = `
-      <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
-        <h3>Tổng Tiền: </h3>
-        <h2>${totalPrice.toLocaleString()} VND</h2>
-        <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
-      </div>`;
-
-  // Chèn cả sản phẩm và phần tổng vào trong một row chính
-  cartContainer.innerHTML = `
-      <div class="row">
-        <div class="col-xl-9 col-md-6 col-12 cart-container__detail">
-          ${cartItemsHTML}
+                <div class="row mb-3 d-flex">
+          <div class="col-12">
+            <div class="row cart__des align-items-center">
+              <div class="col-xl-2 col-md-3 col-4">
+                <img src="${product.image}" alt="${
+              product.name
+            }" class="img-fluid w-100">
+              </div>
+              <div class="col-xl-4 col-md-5 col-8 mt-3 mt-md-0 cart-container__detail__Product">
+                <h3 class="h5">${product.name}</h3>
+                <p>Số lượng: ${product.quantity}</p>
+              </div>
+              <div class="col-xl-3 col-md-4 col-6 mt-3 mt-md-0">
+                <button onclick="removeProduct('${
+                  product.name
+                }')" class="btn btn-block button_buy-primary-color text-white">XÓA KHỎI GIỎ HÀNG</button>
+              </div>
+              <div class="col-xl-3 col-md-12 col-6 text-md-end mt-3 mt-xl-0">
+                <span>${product.price.toLocaleString()} VND</span>
+                <i class="fa-solid fa-tag" style="color: var(--primary-color)"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        ${totalHTML}
-      </div>`;
+        `;
+  });
+  setTimeout(function () {
+    const cartContainer = document.getElementById("cart-container");
+
+    cartContainer.innerHTML = "";
+
+    // Tính tổng giá sản phẩm và đặt bố cục 9-3
+    const totalPrice = products.reduce(
+      (total, product) => total + product.price * product.quantity,
+      0
+    );
+    const totalHTML = `
+        <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
+          <h3>Tổng Tiền: </h3>
+          <h2>${totalPrice.toLocaleString()} VND</h2>
+          <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
+        </div>`;
+
+    // Chèn cả sản phẩm và phần tổng vào trong một row chính
+    cartContainer.innerHTML = `
+        <div class="row">
+          <div class="col-xl-9 col-md-6 col-12 cart-container__detail">
+            ${cartItemsHTML}
+          </div>
+          ${totalHTML}
+        </div>`;
+  }, 500);
+
 }
 
 //Thanh toán sản phẩm 

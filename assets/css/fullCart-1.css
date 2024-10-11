@@ -9,21 +9,6 @@
 
 }
 
-@media screen and (max-width: 1200px) {
-    .cart-container__thanhToan {
-        text-align: center;
-    }
-
-    .cart-container__thanhToan button {
-        width: 200px !important;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-}
-
 .cart__des div span {
     font-size: 1.5rem;
 }
