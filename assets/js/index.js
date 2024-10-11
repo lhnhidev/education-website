@@ -22,7 +22,7 @@ const productList = [
     startDate: "15/10/2024",
     schedule: ["Thứ 3", "Thứ 5", "Thứ 7"],
     time: "19h-21h",
-    price: 12800000,
+    price: 128000,
     name: "Lập trình Fullstack",
   },
   {
@@ -33,7 +33,7 @@ const productList = [
     startDate: "22/10/2024",
     schedule: ["Thứ 3", "Thứ 6", "Chủ Nhật"],
     time: "21h-23h",
-    price: 2600000,
+    price: 260000,
     name: "Lập trình C++ Cơ bản tới nâng cao",
   },
   {
@@ -44,7 +44,7 @@ const productList = [
     startDate: "21/10/2024",
     schedule: ["Thứ 2", "Thứ 4", "Thứ 6", "Chủ nhật"],
     time: "9h-12h",
-    price: 2750000,
+    price: 275000,
     name: "Lập trình C++ Nâng cao",
   },
   {
@@ -55,7 +55,7 @@ const productList = [
     startDate: "21/10/2024",
     schedule: ["Thứ 2", "Thứ 4", "Thứ 6", "Chủ nhật"],
     time: "21h-23h",
-    price: 2950000,
+    price: 295000,
     name: "Cấu trúc dữ liệu và Giải thuật",
   },
   {
@@ -66,7 +66,7 @@ const productList = [
     startDate: "24/10/2024",
     schedule: ["Thứ 2", "Thứ 4", "Thứ 5", "Thứ 7"],
     time: "19h-21h",
-    price: 6990000,
+    price: 699000,
     name: "Lập Trình Thi Đấu",
   },
   {
@@ -77,7 +77,7 @@ const productList = [
     startDate: "06/09/2024",
     schedule: ["Thứ 3", "Thứ 6", "Chủ nhật"],
     time: "19h-21h",
-    price: 2800000,
+    price: 280000,
     name: "Lập trình Java và SQL",
   },
   {
@@ -88,7 +88,7 @@ const productList = [
     startDate: "12/10/2024",
     schedule: ["Thứ 3", "Thứ 7", "Chủ nhật"],
     time: "9h-12h",
-    price: 5800000,
+    price: 580000,
     name: "Lập trình Front-end(Mới)",
   },
   {
@@ -99,7 +99,7 @@ const productList = [
     startDate: "25/10/2024",
     schedule: ["Thứ 7", "Chủ nhật"],
     time: "19h-21h",
-    price: 7000000,
+    price: 700000,
     name: "Lập trình Back-ends NodeJS",
   },
   {
@@ -110,7 +110,7 @@ const productList = [
     startDate: "22/09/2024",
     schedule: ["Thứ 3", "Thứ 6", "Chủ nhật"],
     time: "21h-23h",
-    price: 5000000,
+    price: 500000,
     name: "Lập trình Java Back-end",
   },
   // Thêm các đối tượng khác nếu cần
@@ -400,51 +400,49 @@ document.addEventListener("DOMContentLoaded", function () {
 function displayCartItems() {
   let cartItemsHTML = ""; 
   products.forEach((product) => {
-    cartItemsHTML += `
-                <div class="row mb-3 d-flex">
-          <div class="col-12">
-            <div class="row cart__des align-items-center">
-              <div class="col-xl-2 col-md-3 col-4">
-                <img src="${product.image}" alt="${
-              product.name
-            }" class="img-fluid w-100">
-              </div>
-              <div class="col-xl-4 col-md-5 col-8 mt-3 mt-md-0 cart-container__detail__Product">
-                <h3 class="h5">${product.name}</h3>
-                <p>Số lượng: ${product.quantity}</p>
-              </div>
-              <div class="col-xl-3 col-md-4 col-6 mt-3 mt-md-0">
-                <button onclick="removeProduct('${
-                  product.name
-                }')" class="btn btn-block button_buy-primary-color text-white">XÓA KHỎI GIỎ HÀNG</button>
-              </div>
-              <div class="col-xl-3 col-md-12 col-6 text-md-end mt-3 mt-xl-0">
-                <span>${product.price.toLocaleString()} VND</span>
-                <i class="fa-solid fa-tag" style="color: var(--primary-color)"></i>
-              </div>
+  cartItemsHTML += `
+              <div class="row mb-3 d-flex">
+        <div class="col-12">
+          <div class="row cart__des align-items-center">
+            <div class="col-xl-2 col-md-3 col-4">
+              <img src="${product.image}" alt="${
+            product.name
+          }" class="img-fluid w-100">
+            </div>
+            <div class="col-xl-4 col-md-5 col-8 mt-3 mt-md-0 cart-container__detail__Product">
+              <h3 class="h5">${product.name}</h3>
+              <p>Số lượng: ${product.quantity}</p>
+            </div>
+            <div class="col-xl-3 col-md-4 col-6 mt-3 mt-md-0">
+              <button onclick="removeProduct('${
+                product.name
+              }')" class="btn btn-block button_buy-primary-color text-white">XÓA KHỎI GIỎ HÀNG</button>
+            </div>
+            <div class="col-xl-3 col-md-12 col-6 text-md-end mt-3 mt-xl-0">
+              <span>${product.price.toLocaleString()} VND</span>
+              <i class="fa-solid fa-tag" style="color: var(--primary-color)"></i>
             </div>
           </div>
         </div>
-        `;
+      </div>
+      `;
   });
-  setTimeout(function () {
-    const cartContainer = document.getElementById("cart-container");
 
-    cartContainer.innerHTML = "";
+  // Tính tổng giá sản phẩm và đặt bố cục 9-3
+  const totalPrice = products.reduce(
+    (total, product) => total + product.price * product.quantity,
+    0
+  );
+  const totalHTML = `
+      <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
+        <h3>Tổng Tiền: </h3>
+        <h2>${totalPrice.toLocaleString()} VND</h2>
+        <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
+      </div>`;
 
-    // Tính tổng giá sản phẩm và đặt bố cục 9-3
-    const totalPrice = products.reduce(
-      (total, product) => total + product.price * product.quantity,
-      0
-    );
-    const totalHTML = `
-        <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
-          <h3>Tổng Tiền: </h3>
-          <h2>${totalPrice.toLocaleString()} VND</h2>
-          <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
-        </div>`;
-
-    // Chèn cả sản phẩm và phần tổng vào trong một row chính
+  // Chèn cả sản phẩm và phần tổng vào trong một row chính
+  const cartContainer = document.getElementById("cart-container");
+  if (cartContainer != null) {
     cartContainer.innerHTML = `
         <div class="row">
           <div class="col-xl-9 col-md-6 col-12 cart-container__detail">
@@ -452,7 +450,7 @@ function displayCartItems() {
           </div>
           ${totalHTML}
         </div>`;
-  }, 500);
+  }
 
 }
 
