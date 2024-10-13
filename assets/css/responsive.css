@@ -178,6 +178,10 @@
 }   
 
 @media screen and (max-width: 767.98px) {
+    .header {
+        top: 0;
+    }
+
     .header__top,
     .header__bottom-cart {
         display: none;
