@@ -121,83 +121,73 @@ function generateProductGrid(rows, cols) {
   const container = document.getElementById("product-container");
   container.innerHTML = ""; // Xóa nội dung cũ (nếu có)
 
+  // Tạo một row duy nhất chứa tất cả các sản phẩm
+  const row = document.createElement("div");
+  row.className = "product__row-card d-flex row row-cols-lg-3 row-cols-md-2 row-cols-1 mb-4";
+
   // Duyệt qua từng sản phẩm trong mảng `productList`
-  let productIndex = 0;
-  for (let i = 0; i < rows; i++) {
-    const row = document.createElement("div");
-    row.className =
-      "d-flex row row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-1 mb-4";
+  for (let productIndex = 0; productIndex < productList.length; productIndex++) {
+    const productData = productList[productIndex];
 
-    for (let j = 0; j < cols; j++) {
-      // Kiểm tra xem sản phẩm có tồn tại trong mảng `productList` không
-      if (productIndex >= productList.length) break;
-      const productData = productList[productIndex];
+    const product = document.createElement("div");
+    product.className = "col product__col-card d-flex justify-content-center";
 
-      const product = document.createElement("div");
-      product.className = "col d-flex justify-content-center";
-
-      product.innerHTML = `
-                <div class="card product ">
-                    <img src="${productData.image}" class="card-img-top" alt="${
-        productData.name
-      }" />
-                    <div class="card-body product__body">
-                        <div class="mb-2">
-                            ${'<i class="fa-solid fa-star mb-2" style="color: #ffd43b"></i>'.repeat(
-                              5
-                            )}
-                            <span>(${productData.reviews} Đánh giá)</span>
-                        </div>
-                        <h5 class="card-title mb-0">${productData.name}</h5>
+    product.innerHTML = `
+            <div class="card product">
+                <img src="${productData.image}" class="card-img-top" alt="${productData.name}" />
+                <div class="card-body product__body">
+                    <div class="mb-2">
+                        ${'<i class="fa-solid fa-star mb-2" style="color: #ffd43b"></i>'.repeat(5)}
+                        <span>(${productData.reviews} Đánh giá)</span>
                     </div>
-                    <ul class="list-group list-group-flush product__detail">
-                        <li class="list-group-item">
-                            <i class="fa-solid fa-book"></i>
-                            <span><b>${productData.lectures}</b></span>
-                            <span>Bài giảng</span>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fa-solid fa-user"></i>
-                            <span><b>${productData.students}</b></span>
-                            <span>Học viên</span>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fa-solid fa-calendar"></i>
-                            <span>Khai giảng:</span>
-                            <span><b>${productData.startDate}</b></span>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fa-solid fa-calendar"></i>
-                            <span>Lịch học:</span>
-                            <span><b>${productData.schedule.join(
-                              ", "
-                            )}</b></span>
-                        </li>
-                        <li class="list-group-item">
-                            <i class="fa-solid fa-clock"></i>
-                            <span>Giờ học:</span>
-                            <span><b>${productData.time}</b></span>
-                        </li>
-                        <li class="list-group-item">
-                            <img class="d-inline-block" style="width: 3rem" src="assets/img/logo.svg" alt="..." />
-                            <span class="ml-2">Đội ngũ Coursera</span>
-                        </li>
-                    </ul>
-                    <div class="card-body">
-                        <form class="product__buy d-flex justify-content-between">
-                            <span class="product__price">${productData.price.toLocaleString()} VND</span>
-                            <button type="button" class="btn btn-dark buy_element button_buy-primary-color">
-                                Add to cart
-                            </button>
-                        </form>
-                    </div>
+                    <h5 class="card-title mb-0">${productData.name}</h5>
                 </div>
-            `;
-      row.appendChild(product);
-      productIndex++;
-    }
-    container.appendChild(row);
+                <ul class="list-group list-group-flush product__detail">
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-book"></i>
+                        <span><b>${productData.lectures}</b></span>
+                        <span>Bài giảng</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-user"></i>
+                        <span><b>${productData.students}</b></span>
+                        <span>Học viên</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>Khai giảng:</span>
+                        <span><b>${productData.startDate}</b></span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>Lịch học:</span>
+                        <span><b>${productData.schedule.join(", ")}</b></span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Giờ học:</span>
+                        <span><b>${productData.time}</b></span>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="d-inline-block" style="width: 3rem" src="assets/img/logo.svg" alt="..." />
+                        <span class="ml-2">Đội ngũ Coursera</span>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <form class="product__buy d-flex justify-content-between">
+                    <span class="product__price">${productData.price.toLocaleString()} VND</span>
+                        <button type="button" class="btn btn-dark buy_element button_buy-primary-color">
+                            Add to cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+        `;
+    row.appendChild(product); // Thêm từng col vào row duy nhất
   }
+
+  // Thêm row vào container
+  container.appendChild(row);
 }
 
 // Run generateProduct
@@ -362,7 +352,7 @@ function loadCartData() {
             <p class="mb-0">Số lượng: ${product.quantity}</p>
             <button class="btn btn-block button_buy-primary-color text-white mt-2" onclick="removeProduct('${
               product.name
-            }')">REMOVE FROMT CART</button>
+            }')">Xóa khỏi giỏ hàng</button>
           </div>
         </div>`;
       cartItemsContainer.appendChild(cartItem);

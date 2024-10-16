@@ -8,10 +8,13 @@
 .button_buy-primary-color {
     background-color: var(--primary-color) !important;
     font-weight: 700;
+    font-size: 1.2rem;
+    transition: .3s;
 }
 
 .button_buy-primary-color:hover {
-    background-color: var(--primary-color);
+    background-color: var(--second-color) !important;
+    transform: .3s;
 }
 
 /*Class dùng chung*/
@@ -48,6 +51,10 @@
     padding: 8px 16px;
     background: #ffffff;
     font-size: 1.6rem;
+}
+
+.product__detail .list-group-item {
+    border: none !important;
 }
 
 .product__buy span {

@@ -11,7 +11,7 @@ body {
     overflow-y: auto;
 }
 
-.header__bottom-cart .header__bottom-dropmenu {
+.header__bottom-dropmenu {
     width: 25vw;
     min-width: 420px;
     margin-top: 15px !important;
@@ -24,15 +24,19 @@ body {
     font-size: 1.4rem;
     color: var(--white-100-color);
     width: 100%;
+    margin-top: 5px;
 }
 
-.header__bottom-cart .dropdown-header {
-    font-size: 1.4rem;
-}
-
-.header__bottom-cart .list-group-item {
+.dropdown-header {
+    font-size: 2rem;
     margin-bottom: 5px;
-    border: 1px solid #ddd;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.list-group-item {
+    margin-bottom: 5px;
+    border: 1px solid #ddd !important;
     border-radius: 5px;
 }
 
@@ -41,6 +45,16 @@ body {
     width: 130px !important;
 }
 
+.miniCart__infor p {
+    margin-bottom: 3px !important;
+    font-size: 1.3rem !important;
+}
+
 .miniCart__infor p:first-child {
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
+    line-height: 1.2;
+}   
+
+.miniCart__infor p:nth-child(2) {
+    font-size: 1.3rem !important;
 }
