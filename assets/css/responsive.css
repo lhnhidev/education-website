@@ -74,6 +74,10 @@
     .response__desc {
         font-size: 1.8rem;
     }
+
+    .topic .col-xl-3:last-child {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1081.98px) {
@@ -174,6 +178,10 @@
 
     .response__main .row .col-xl-4 {
         margin-bottom: 15px;
+    }
+
+    .topic .col-xl-3:last-child {
+        display: block;
     }
 }   
 
