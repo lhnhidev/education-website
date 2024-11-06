@@ -840,10 +840,6 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     border: none;
 }
 
-.product__img {
-    
-}
-
 .product__img-card {
     width: 100%;
     height: 180px;
@@ -1156,7 +1152,9 @@ button.form-btn:hover {
 }
 
 .about-us-img img{
-    width: 100%;
+    width: calc(100% - 200px);
+    display: block;
+    margin: auto;
 }
 
 .about-us-content .list{
@@ -1305,6 +1303,7 @@ button.form-btn:hover {
 .why__left img {
     display: block;
     width: 100%;
+    margin: auto;
 }
 
 .thing{
@@ -1786,6 +1785,10 @@ a > label.form-check-label{
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    .about-us-img img{
+        width: calc(100% - 100px);
+    }
 }
 
 @media screen and (max-width: 1081.98px) {
@@ -1900,13 +1903,27 @@ a > label.form-check-label{
 
     .content__img > img{
         display: none;
-   }    
-  .content__form-group h2{
-        margin-top: 30px;
-  }
-  .content__form-group{
+    }   
+
+    .content__form-group h2{
+            margin-top: 30px;
+    }
+    .content__form-group{
+            margin: auto;
+    }
+
+    .about-us-img img{
+        width: 100%;
+    }
+
+    .why__left {
+        width: 50%;
         margin: auto;
-  }
+    }
+
+    .watch-courses > a {
+        margin-bottom: 30px;
+    }
 }   
 
 @media screen and (max-width: 834.98px) {
@@ -2006,6 +2023,10 @@ a > label.form-check-label{
     }
     .cart-container__thanhToan {
         order: 0;
+    }
+
+    .about-us-img img{
+        width: calc(100% - 300px);
     }
 }
 
