@@ -167,7 +167,7 @@ function generateProductGrid(rows, cols) {
                     <form class="product__buy d-flex justify-content-between">
                     <span class="product__price">${productData.price.toLocaleString()} VND</span>
                         <button type="button" class="btn btn-dark buy_element button_buy-primary-color">
-                            Add to cart
+                            Thêm giỏ hàng
                         </button>
                     </form>
                 </div>
@@ -415,9 +415,9 @@ function displayCartItems() {
   );
   const totalHTML = `
       <div class="col-xl-3 col-md-6 col-12 ps-xl-5 ps-0 cart-container__thanhToan">
-        <h3>Tổng Tiền: </h3>
-        <h2>${totalPrice.toLocaleString()} VND</h2>
-        <button class="btn btn-block button_buy-primary-color text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
+        <h3 class="product-heading">Tổng Tiền: </h3>
+        <h2 class="product-title">${totalPrice.toLocaleString()} VND</h2>
+        <button class="btn btn-block button_buy-primary-color button-solve text-white w-100" onclick = "buyProduct()">MUA HÀNG</button>
       </div>`;
 
   // Chèn cả sản phẩm và phần tổng vào trong một row chính
