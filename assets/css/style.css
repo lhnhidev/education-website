@@ -963,7 +963,9 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     font-size: 5.5rem;
 }
 .contact-form .form__title h1{
-    font-size: 3.5rem;
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 .form-floating label{
     transition: 0.3s ease;
@@ -1000,7 +1002,24 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     outline: none;
 }
 .form__content input, .form__content label, .form__content textarea{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+.form-check-input.subscribe {
+    margin: 0;
+    margin-right: 10px;
+}
+.form-subs {
+    margin-top: 15px;
+    margin-bottom: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px !important;
+}
+.form-subs label {
+    font-size: 1.6rem;
 }
 .form-check{
     width: 100%;
@@ -1034,24 +1053,21 @@ textarea.form-control{
     max-width: 500px;
 }
 .form__button button{
-    width: 70%;
+    width: 60%;
+    height: 40px;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: var(--primary-color);
     transition: 0.3s ease;
-    padding: 3px;
+    padding: 8px;
 }
-button.form-btn:hover, button.form-btn:focus {
-    color: white;
-    box-shadow: 0px 0px 20px var(--second-color);
-    transform: translateY(-0.3rem);
+button.form-btn:hover {
     background-color: var(--second-color);
+    color: #fff;
 }
-button.form-btn:active {
-    color: white !important;
-    box-shadow: 0px 0px 20px var(--second-color) !important;
-    transform: translateY(-0.3rem) !important;
+.btn:first-child:active {
     background-color: var(--second-color) !important;
+    color: #fff !important;
     border: none !important;
 }
 #contact-img-cover{
@@ -2025,6 +2041,14 @@ a > label.form-check-label{
     .formF .form-control {
             width: 380px;
     }
+
+    .contact-form .form__title h1 {
+        font-size: 3.2rem;
+    }
+
+    .form-floating > .form-control {
+        width: 380px;
+    }
 }
 
 @media screen and (max-width: 510.98px){
@@ -2100,7 +2124,7 @@ a > label.form-check-label{
           font-size: 3rem;
     }
     .form-floating > .form-control {
-          width: 250px;
+          width: 100%;
     }
 
     .formt__group {
@@ -2118,9 +2142,6 @@ a > label.form-check-label{
 @media screen and (max-width: 385.98px){
     .content__text-heading {
           font-size: 3rem;
-    }
-    .form-floating > .form-control {
-          width: 220px;
     }
 
     .content__form-group {
