@@ -99,10 +99,30 @@
                 <i class="fa-solid fa-cart-shopping"
                     ><span><span class="header__bottom-icon-count">0</span></span>
                 </i>
+
+                <ul
+                    class="dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
+                    aria-labelledby="cartDropdown" style="cursor: default; transform-origin: 90% 10%;"
+                >
+                    <h5 class="dropdown-header">Sản phẩm đã chọn</h5>
+                    <ul class="list-group" id="cart-items">
+                        <!-- Nội dung sản phẩm sẽ được thêm vào đây -->
+                    </ul>
+                    <div class="dropdown-divider"></div>
+                    <button
+                        class="btn btn-block button_buy-primary-color"
+                        style="color: white; width: 100%"
+                        
+                        onclick="location.href= './html/cart.html';"
+                        id="checkout-btn"
+                    >
+                        Thanh toán
+                    </button>
+                </ul>
             </div>
 
             <ul
-                    class="dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
+                    class="animate__animated animate__zoomIn dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
                     aria-labelledby="cartDropdown"
                 >
                     <h5 class="dropdown-header">Sản phẩm đã chọn</h5>

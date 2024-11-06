@@ -7,8 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdown = new bootstrap.Dropdown(cartIcon);
 
   // Sự kiện click vào icon giỏ hàng
-  cartIcon.addEventListener("click", function () {
-    dropdown.toggle();
+  // Sự kiện hover vào icon giỏ hàng
+  cartIcon.addEventListener("mouseenter", function () {
+    dropdown.show();
+  });
+
+  // Sự kiện rời chuột khỏi icon giỏ hàng
+  cartIcon.addEventListener("mouseleave", function () {
+    dropdown.hide();
   });
 });
 
