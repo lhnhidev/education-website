@@ -130,7 +130,7 @@ button.formF-btn:hover, button.formF-btn:focus {
 }
 
 .form-icon a:hover {
-      color: var(--second-color);
+      color: var(--primary-color);
       transition: .3s;
 }
 
@@ -148,6 +148,22 @@ a > label.form-check-label{
 .form-icon > a {
       margin-left: 10px;
       margin-right: 10px;
+}
+.haveLink {
+      display: block;
+      margin: auto;
+      width: fit-content;
+      transition: .3s;
+}
+.haveLink label {
+      transition: .3s;
+}
+.haveLink:hover label {
+      color: var(--primary-color) !important;
+      transition: .3s;
+}
+.haveAccount {
+      margin-left: 0 !important;
 }
 
 @media screen and (max-width: 990px){
