@@ -10,6 +10,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 * {
     font-family: var(--font-family);
 }
@@ -1481,6 +1485,7 @@ button.formF-btn:hover, button.formF-btn:focus {
      margin: auto;
      margin-top: 10px;
      margin-bottom: 15px;
+     text-align: center;
 }
 
 .form-icon a {
@@ -1704,6 +1709,18 @@ a > label.form-check-label{
     .contact-img-bottom{
         margin-top: 30px;
     }
+
+    .cart-container__thanhToan {
+        text-align: center;
+    }
+
+    .cart-container__thanhToan button {
+        width: 200px !important;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 1081.98px) {
@@ -1808,13 +1825,23 @@ a > label.form-check-label{
         align-items: center;
     }
 
-    .course .row {
+    /* .course .row {
         flex-direction: column-reverse;
-    }
+    } */
 
     .skills-img {
         margin-bottom: 20px;
     }
+
+    .content__img > img{
+        display: none;
+   }    
+  .content__form-group h2{
+        margin-top: 30px;
+  }
+  .content__form-group{
+        margin: auto;
+  }
 }   
 
 @media screen and (max-width: 834.98px) {
@@ -1885,10 +1912,6 @@ a > label.form-check-label{
         text-align: justify;
     }
 
-    .course .row {
-        flex-direction: column-reverse;
-    }
-
     .skills {
         margin-top: 20px;
     }
@@ -1911,6 +1934,13 @@ a > label.form-check-label{
 
     .contact-img-bottom{
         width: 100%;
+    }
+
+    .cart-container__detail {
+        order: 1;
+    }
+    .cart-container__thanhToan {
+        order: 0;
     }
 }
 
@@ -1980,9 +2010,30 @@ a > label.form-check-label{
     .footer .container .col-12:nth-child(3) {
         display: none;
     }
+
+    .box-pass {
+        width: 380px;
+        flex-wrap: wrap;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .box-pass a {
+            margin-top: 5px;
+    }
+
+    .formF .form-control {
+            width: 380px;
+    }
 }
 
-@media screen and (max-width: 480.98px) {
+@media screen and (max-width: 510.98px){
+    .formF .form-control {
+          width: 350px;
+    }
+}
+
+@media screen and (max-width: 485.98px) {
     .consultation > h2 {
         font-size: 2rem;
     }
@@ -1992,9 +2043,15 @@ a > label.form-check-label{
         font-size: 1.2rem;
     }
 
+    .form__title h1{
+        font-size: 3rem !important;
+    }
+    .contact-img-bottom{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 450px) {
     .list li {
         margin-bottom: 20px;
         text-align: justify;
@@ -2029,4 +2086,48 @@ a > label.form-check-label{
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .form__title h1{
+        font-size: 2.5rem !important;
+    }
+    .form__title h1{
+        font-size: 2.2rem !important;
+    }
+}
+
+@media screen and (max-width: 430.98px){
+    .content__text-heading {
+          font-size: 3rem;
+    }
+    .form-floating > .form-control {
+          width: 250px;
+    }
+
+    .formt__group {
+          width: 320px;
+    }
+
+    #rememberPass,
+    #forgotPass,
+    .formF__button button, 
+    .form__group.form-check > p {
+          font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 385.98px){
+    .content__text-heading {
+          font-size: 3rem;
+    }
+    .form-floating > .form-control {
+          width: 220px;
+    }
+
+    .content__form-group {
+          width: 200px;
+    }
+
+    .formt__group {
+          width: 270px;
+      }
 }
