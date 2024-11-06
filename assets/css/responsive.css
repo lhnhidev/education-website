@@ -114,7 +114,7 @@
     .header__bottom-item:hover {
         color: var(--primary-color);
         transition: .3s;
-        background-color: var(--white-30-color);
+        background-color: #F0F6FF;
     }   
 }
 

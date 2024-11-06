@@ -22,7 +22,7 @@ body {
 .header__bottom-dropmenu #checkout-btn {
     padding: 8px;
     font-size: 1.4rem;
-    color: var(--white-100-color);
+    color: #fff;
     width: 100%;
     margin-top: 5px;
 }

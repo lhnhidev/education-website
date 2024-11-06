@@ -1,9 +1,9 @@
-body{
+/* body{
     width: auto;
-}
+} */
 
 .about-us{
-    background-color: var(--white-100-color);
+    background-color: #fff;
     margin: 4rem 4rem;
     font-size: 16px;
 }
@@ -33,7 +33,7 @@ body{
 .btn-about {
     padding: 12px 18px;
     background-color: var(--primary-color);
-    color: var(--white-100-color);
+    color: #fff;
     border-radius: 10px;
     border: none;
     display: block;
@@ -49,7 +49,7 @@ body{
 .course-skills{
     width: auto;
     height: 53.8rem;
-    background-color: var(--white-30-color);
+    background-color: #F0F6FF;
     margin: 4rem 4rem;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ body{
 .skills{
     font-family: var(--font-family);
     font-size: 1.6rem;
-    color: var(--text-dark-color);
+    color: #000;
 }
 
 .about-us-content h1, .course-skills h1, .why-chose-us h1{
@@ -116,7 +116,7 @@ body{
 .learn1:hover, .learn2:hover, .learn3:hover, .learn4:hover{
     box-shadow: 0 4px 10px var(--primary-color);   /* x y blur scale color*/
     transform: translateY(-5px);
-    background-color: var(--grey-60-color);
+    background-color: #F5F5F5;
     cursor: pointer;
 }
 
@@ -131,7 +131,7 @@ body{
     margin-left: 1.5rem;
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--white-100-color);
+    color: #fff;
     transition: .3s;
 }
 
@@ -142,7 +142,7 @@ body{
 .course {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: var(--white-30-color);
+    background-color: #F0F6FF;
 }
 
 .watch-courses a:hover, .sign-in a:hover{
@@ -151,7 +151,7 @@ body{
 }
 
 .chose-us {
-    background-color: var(--white-100-color);
+    background-color: #fff;
     margin: 4rem 0;
 }
 
@@ -166,7 +166,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white-30-color);
+    background-color: #F0F6FF;
     padding: 10px;
 }
 
@@ -175,7 +175,7 @@ body{
     width: 10rem;
     line-height: 10rem;
     border-radius: 10px;
-    background-color: var(--white-100-color);
+    background-color: #fff;
     margin-right: 10px;
 }
 .thing-img img{
@@ -203,7 +203,7 @@ body{
 .request-advice{
     margin: 4rem 4rem;
     font-size: 16px;
-    color: var(--white-100-color);
+    color: #fff;
 }
 
 .request-advice p {
@@ -225,7 +225,7 @@ body{
     width: 25rem;
     border-radius: 1rem;
     padding: 5px 12px;
-    background-color: var(--white-100-color);
+    background-color: #fff;
     outline: none;
     border: none;
     margin-right: 8px;
@@ -234,7 +234,7 @@ body{
     height: 5rem;
     width: 19rem;
     border-radius: 1rem;
-    color: var(--white-100-color);
+    color: #fff;
     font-size: 20px;
     background-color: var(--primary-color   );
     transition: all 0.5s ease;
