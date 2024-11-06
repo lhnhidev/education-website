@@ -21,103 +21,103 @@ document.addEventListener("DOMContentLoaded", function () {
 //Danh sách obj để nhập thông tin vào card
 const productList = [
   {
-    image: "../assets/img/fullstack_thumb_500.jpg",
-    reviews: 180,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/bd6b9fa3d280e2b6f9624e1edcc328ab?_a=AQAEuiZ",
+    reviews: 18.128,
     lectures: 95,
-    students: 32,
+    students: 31.222,
     startDate: "15/10/2024",
     schedule: ["Thứ 3", "Thứ 5", "Thứ 7"],
     time: "19h-21h",
     price: 128000,
-    name: "Lập trình Fullstack",
+    name: "Giới thiệu về Data Science",
   },
   {
-    image: "../assets/img/card2.png",
-    reviews: 258,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/84e0928530709a485a0c1fd5efd01e1d?_a=AQAEuiZ",
+    reviews: 20.158,
     lectures: 40,
     students: 80,
     startDate: "22/10/2024",
     schedule: ["Thứ 3", "Thứ 6", "Chủ Nhật"],
     time: "21h-23h",
     price: 260000,
-    name: "Lập trình C++ Cơ bản tới nâng cao",
+    name: "Lập trình C++ Nâng cao",
   },
   {
-    image: "../assets/img/card3.png",
-    reviews: 326,
+    image: "https://res.cloudinary.com/daily-now/image/upload/s--m_-p0GoJ--/f_auto/v1727769152/posts/PrMmt01tL",
+    reviews: 9.126,
     lectures: 50,
     students: 42,
     startDate: "21/10/2024",
     schedule: ["Thứ 2", "Thứ 4", "Thứ 6", "Chủ nhật"],
     time: "9h-12h",
     price: 275000,
-    name: "Lập trình C++ Nâng cao",
+    name: "Lập trình Game với C++",
   },
   {
-    image: "../assets/img/card4.png",
-    reviews: 290,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/eaeacd1033553f0ac650b1c335a2439b",
+    reviews: 12.290,
     lectures: 42,
     students: 60,
     startDate: "21/10/2024",
     schedule: ["Thứ 2", "Thứ 4", "Thứ 6", "Chủ nhật"],
     time: "21h-23h",
     price: 295000,
-    name: "Cấu trúc dữ liệu và Giải thuật",
+    name: "Typescript Nâng cao",
   },
   {
-    image: "../assets/img/card5.png",
-    reviews: 268,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/27fda832cf02b28a4410f0b43f3188da?_a=AQAEuiZ",
+    reviews: 2.568,
     lectures: 65,
     students: 30,
     startDate: "24/10/2024",
     schedule: ["Thứ 2", "Thứ 4", "Thứ 5", "Thứ 7"],
     time: "19h-21h",
     price: 699000,
-    name: "Lập Trình Thi Đấu",
+    name: "Trở thành Frontend",
   },
   {
-    image: "../assets/img/card6.png",
-    reviews: 215,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/9f8c36d3058f1e3265012fc9d79d0a79?_a=AQAEufR",
+    reviews: 915,
     lectures: 36,
     students: 50,
     startDate: "06/09/2024",
     schedule: ["Thứ 3", "Thứ 6", "Chủ nhật"],
     time: "19h-21h",
     price: 280000,
-    name: "Lập trình Java và SQL",
+    name: "Tìm hiểu Framworks Javascript",
   },
   {
-    image: "../assets/img/card7.jpg",
-    reviews: 286,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/ad91e0f1d6a9546edfb205c2dfc48022?_a=AQAEuiZ",
+    reviews: 5.186,
     lectures: 52,
     students: 36,
     startDate: "12/10/2024",
     schedule: ["Thứ 3", "Thứ 7", "Chủ nhật"],
     time: "9h-12h",
     price: 580000,
-    name: "Lập trình Front-end(Mới)",
+    name: "Lập trình Java nâng cao",
   },
   {
-    image: "../assets/img/card8.png",
-    reviews: 350,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/5d9b895ec2d823d5ea6b68b900d304d6?_a=AQAEuiZ",
+    reviews: 32.350,
     lectures: 50,
     students: 36,
     startDate: "25/10/2024",
     schedule: ["Thứ 7", "Chủ nhật"],
     time: "19h-21h",
     price: 700000,
-    name: "Lập trình Back-ends NodeJS",
+    name: "Thị giác máy tính",
   },
   {
-    image: "../assets/img/card9.png",
-    reviews: 123,
+    image: "https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/904a1f2adb89ee4a21bf0dc093c7c058?_a=AQAEuiZ",
+    reviews: 50.003,
     lectures: 42,
     students: 29,
     startDate: "22/09/2024",
     schedule: ["Thứ 3", "Thứ 6", "Chủ nhật"],
     time: "21h-23h",
     price: 500000,
-    name: "Lập trình Java Back-end",
+    name: "Nghiên cứu Git và Github",
   },
   // Thêm các đối tượng khác nếu cần
 ];
@@ -139,8 +139,10 @@ function generateProductGrid(rows, cols) {
     product.className = "col product__col-card d-flex justify-content-center";
 
     product.innerHTML = `
-            <div class="card product">
-                <img src="${productData.image}" class="card-img-top" alt="${productData.name}" />
+            <div class="card product product-box">
+                <div class="product__img">
+                  <img src="${productData.image}" class="card-img-top product__img-card" alt="${productData.name}" />
+                </div>
                 <div class="card-body product__body">
                     <div class="mb-2">
                         ${'<i class="fa-solid fa-star mb-2" style="color: #ffd43b"></i>'.repeat(5)}
@@ -159,25 +161,7 @@ function generateProductGrid(rows, cols) {
                         <span><b>${productData.students}</b></span>
                         <span>Học viên</span>
                     </li>
-                    <li class="list-group-item">
-                        <i class="fa-solid fa-calendar"></i>
-                        <span>Khai giảng:</span>
-                        <span><b>${productData.startDate}</b></span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa-solid fa-calendar"></i>
-                        <span>Lịch học:</span>
-                        <span><b>${productData.schedule.join(", ")}</b></span>
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>Giờ học:</span>
-                        <span><b>${productData.time}</b></span>
-                    </li>
-                    <li class="list-group-item">
-                        <img class="d-inline-block" style="width: 3rem" src="assets/img/logo.svg" alt="..." />
-                        <span class="ml-2">Đội ngũ Coursera</span>
-                    </li>
+                    
                 </ul>
                 <div class="card-body">
                     <form class="product__buy d-flex justify-content-between">

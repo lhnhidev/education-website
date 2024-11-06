@@ -806,6 +806,26 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     font-weight: bold;
 }
 
+.product__col-card > .product-box {
+    border: 1px solid #7f7f7f57;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+}
+
+.product-box > [class*="product"] {
+    border: none;
+}
+
+.product__img {
+    
+}
+
+.product__img-card {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
 #cart-items {
     max-height: 400px;
     overflow-y: auto;
@@ -1553,6 +1573,11 @@ a > label.form-check-label{
     font-weight: 700;
     font-size: 1.2rem;
     transition: .3s;
+}
+
+.button-solve {
+    padding: 8px;
+    font-size: 1.6rem;
 }
 
 .button_buy-primary-color:hover {
