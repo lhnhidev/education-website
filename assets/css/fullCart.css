@@ -24,19 +24,3 @@
 
 }
 
-.cart__des div span {
-    font-size: 1.5rem;
-}
-
-.cart-container__thanhToan * {
-    font-size: 2rem;
-}
-
-.cart-container__detailProduct * {
-    font-size: 1.5rem;
-}
-
-.cart-container__detail > * {
-    border-top: 1px rgb(207, 207, 207) solid;
-    padding-top: 10px;
-}
