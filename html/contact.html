@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Website</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,233 +16,285 @@
     <link rel="stylesheet" href="../assets/css/cart.css" />
     <link rel="stylesheet" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="../assets/css/consultation.css" />
-</head>
 <body>
     
     <!-- TODO: Header -->
-     <div class="header">
+    <div class="header">
 
-        <!-- TODO: Header top -->
+    <!-- TODO: Header top -->
 
-        <div class="header__top container-fluid">
-            <p class="header__top-sale">
-                Siêu sale Black Friday ! Chỉ còn 
-                <span class="header__top-day skew" style="--deg: -16deg; --color: var(--primary-color);">10</span>
-                ngày !!!
-            </p>
+    <div class="header__top container-fluid">
+        <p class="header__top-sale">
+            Siêu sale Black Friday ! Chỉ còn 
+            <span class="header__top-day skew" style="--deg: -16deg; --color: var(--primary-color);">10</span>
+            ngày !!!
+        </p>
 
-            <div class="header__top-social">
-                Theo dõi chúng tôi: 
-                <ul class="header__top-list">
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
+        <div class="header__top-social">
+            Theo dõi chúng tôi: 
+            <ul class="header__top-list">
+                <li class="header__top-item">
+                    <a href="#" class="header__top-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="header__top-item">
+                    <a href="#" class="header__top-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="header__top-item">   
+                    <a href="#" class="header__top-link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li class="header__top-item">
+                    <a href="#" class="header__top-link">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TODO: Header bottom -->
+    <div class="header__bottom container-fluid">
+        <div class="header__bottom-section">
+            <div class="header__bottom-logo">
+                <a href="#">
+                    <img src="../assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__bottom-genre">
+                <p>Thể loại <i class="fa-solid fa-angle-down"></i></p>
+                <ul class="header__bottom-genre-list animate__animated animate__fadeInLeft">
+                    <li class="header__bottom-genre-item">
+                        <a href="#" class="header__bottom-genre-link">Front End <i class="fa-solid fa-angle-right"></i></a>
                     </li>
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+                    <li class="header__bottom-genre-item">
+                        <a href="#" class="header__bottom-genre-link">Back End <i class="fa-solid fa-angle-right"></i></a>
                     </li>
-                    <li class="header__top-item">   
-                        <a href="#" class="header__top-link">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
+                    <li class="header__bottom-genre-item">
+                        <a href="#" class="header__bottom-genre-link">Fullstack <i class="fa-solid fa-angle-right"></i></a>
                     </li>
-                    <li class="header__top-item">
-                        <a href="#" class="header__top-link">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
+                    <li class="header__bottom-genre-item">
+                        <a href="#" class="header__bottom-genre-link">Devops <i class="fa-solid fa-angle-right"></i></a>
                     </li>
+                    <li class="header__bottom-genre-item">
+                        <a href="#" class="header__bottom-genre-link">Other <i class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__bottom-search">
+                <div class="header__bottom-search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" class="header__bottom-input" placeholder="Tìm kiếm nội dung bất kỳ">
+            </div>
+
+            <div class="header__bottom-cart">
+                <i class="fa-solid fa-cart-shopping"
+                    ><span><span class="header__bottom-icon-count">0</span></span>
+                </i>
+
+                <ul
+                    class="dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
+                    aria-labelledby="cartDropdown"
+                    >
+                    <h5 class="dropdown-header">Sản phẩm đã chọn</h5>
+                    <ul class="list-group" id="cart-items">
+                        <!-- Nội dung sản phẩm sẽ được thêm vào đây -->
+                    </ul>
+                    <div class="dropdown-divider"></div>
+                    <button
+                        class="btn btn-block button_buy-primary-color"
+                        style="color: white; width: 100%"
+                        
+                        onclick="location.href= './cart.html';"
+                        id="checkout-btn"
+                    >
+                        Thanh toán
+                    </button>
                 </ul>
             </div>
         </div>
 
-        <!-- TODO: Header bottom -->
-        <div class="header__bottom container-fluid">
-            <div class="header__bottom-section">
-                <div class="header__bottom-logo">
-                    <a href="#">
-                        <img src="../assets/img/logo.svg" alt="logo">
-                    </a>
-                </div>
-    
-                <div class="header__bottom-genre">
-                    <p>Thể loại <i class="fa-solid fa-angle-down"></i></p>
-                    <ul class="header__bottom-genre-list animate__animated animate__fadeInLeft">
-                        <li class="header__bottom-genre-item">
-                            <a href="#" class="header__bottom-genre-link">Front End <i class="fa-solid fa-angle-right"></i></a>
-                        </li>
-                        <li class="header__bottom-genre-item">
-                            <a href="#" class="header__bottom-genre-link">Back End <i class="fa-solid fa-angle-right"></i></a>
-                        </li>
-                        <li class="header__bottom-genre-item">
-                            <a href="#" class="header__bottom-genre-link">Fullstack <i class="fa-solid fa-angle-right"></i></a>
-                        </li>
-                        <li class="header__bottom-genre-item">
-                            <a href="#" class="header__bottom-genre-link">Devops <i class="fa-solid fa-angle-right"></i></a>
-                        </li>
-                        <li class="header__bottom-genre-item">
-                            <a href="#" class="header__bottom-genre-link">Other <i class="fa-solid fa-angle-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="header__bottom-search">
-                    <div class="header__bottom-search-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <input type="text" class="header__bottom-input" placeholder="Tìm kiếm nội dung bất kỳ">
-                </div>
-    
-                <div class="header__bottom-cart">
-                    <i class="fa-solid fa-cart-shopping"
-                        ><span><span class="header__bottom-icon-count">0</span></span>
-                    </i>
+        <ul class="header__bottom-nav">
+            <li class="header__bottom-nav-item">
+                <a class="header__bottom-nav-link" href="../index.html">Trang chủ</a>
+            </li>
+            <li class="header__bottom-nav-item">
+                <a class="header__bottom-nav-link" href="./desc.html">Giới thiệu</a>
+            </li>
+            <li class="header__bottom-nav-item">
+                <a class="header__bottom-nav-link" href="./product.html">Sản phẩm</a>
+            </li>
+            <li class="header__bottom-nav-item">
+                <a class="header__bottom-nav-link" href="./contact.html">Liên hệ</a>
+            </li>
+            <li class="header__bottom-nav-item">
+                <a class="header__bottom-nav-link" href="./login.html">Đăng nhập</a>
+            </li>
+            <li class="header__bottom-nav-item">
+                <a class="header__bottom-nav-link" href="./register.html">Đăng ký</a>
+             </li>
+        </ul>
 
-                    <ul
-                        class="dropdown-menu dropdown-menu-end p-3 header__bottom-dropmenu"
-                        aria-labelledby="cartDropdown"
-                        >
-                        <h5 class="dropdown-header">Sản phẩm đã chọn</h5>
-                        <ul class="list-group" id="cart-items">
-                            <!-- Nội dung sản phẩm sẽ được thêm vào đây -->
-                        </ul>
-                        <div class="dropdown-divider"></div>
-                        <button
-                            class="btn btn-block button_buy-primary-color"
-                            style="color: white; width: 100%"
-                            
-                            onclick="location.href= './cart.html';"
-                            id="checkout-btn"
-                        >
-                            Thanh toán
-                        </button>
-                    </ul>
-                </div>
-            </div>
+        <button class="header__bottom-bar" id="barBtn">
+            <i class="fa-solid fa-bars"></i>
 
-            <ul class="header__bottom-nav">
-                <li class="header__bottom-nav-item">
-                    <a class="header__bottom-nav-link" href="../index.html">Trang chủ</a>
-                </li>
-                <li class="header__bottom-nav-item">
-                    <a class="header__bottom-nav-link" href="#">Giới thiệu</a>
-                </li>
-                <li class="header__bottom-nav-item">
-                    <a class="header__bottom-nav-link" href="./product.html">Sản phẩm</a>
-                </li>
-                <li class="header__bottom-nav-item">
-                    <a class="header__bottom-nav-link" href="./contact.html">Liên hệ</a>
-                </li>
-                <li class="header__bottom-nav-item">
-                    <a class="header__bottom-nav-link" href="./login.html">Đăng nhập</a>
-                </li>
-                <li class="header__bottom-nav-item">
-                    <a class="header__bottom-nav-link" href="./register.html">Đăng ký</a>
-                 </li>
-            </ul>
-
-            <button class="header__bottom-bar" id="barBtn">
-                <i class="fa-solid fa-bars"></i>
-
-                <ul
-                class="header__bottom-list header__bottom-genre-list animate__animated animate__fadeInRight"
+            <ul
+            class="header__bottom-list header__bottom-genre-list animate__animated animate__fadeInRight"
+          >
+            <li class="header__bottom-item">
+              <a href="../index.html" class="header__bottom-link header__bottom-genre-link"
+                >Trang chủ</a
               >
-                <li class="header__bottom-item">
-                  <a href="../index.html" class="header__bottom-link header__bottom-genre-link"
-                    >Trang chủ</a
-                  >
-                </li>
-                <li class="header__bottom-item">
-                  <a href="#" class="header__bottom-link header__bottom-genre-link"
-                    >Giới thiệu</a
-                  >
-                </li>
-                <li class="header__bottom-item">
-                  <a href="product.html" class="header__bottom-link header__bottom-genre-link" 
-                    >Sản phẩm</a
-                  >
-                </li>
-                <li class="header__bottom-item">
-                  <a href="contact.html" class="header__bottom-link header__bottom-genre-link"
-                    >Liên hệ</a
-                  >
-                </li>
-                <li class="header__bottom-item">
-                  <a href="cart.html" class="header__bottom-link header__bottom-genre-link"
-                    >Giỏ hàng</a
-                  >
-                </li>
-                <li class="header__bottom-item">
-                  <a href="login.html" class="header__bottom-link header__bottom-genre-link"
-                    >Đăng nhập</a
-                  >
-                </li>
-                <li class="header__bottom-item">
-                  <a href="register.html" class="header__bottom-link header__bottom-genre-link"
-                    >Đăng ký</a
-                  >
-                </li>
-              </ul>
-            </button>   
-        </div>
-
-     </div>
+            </li>
+            <li class="header__bottom-item">
+              <a href="./desc.html" class="header__bottom-link header__bottom-genre-link"
+                >Giới thiệu</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a href="product.html" class="header__bottom-link header__bottom-genre-link" 
+                >Sản phẩm</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a href="contact.html" class="header__bottom-link header__bottom-genre-link"
+                >Liên hệ</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a href="cart.html" class="header__bottom-link header__bottom-genre-link"
+                >Giỏ hàng</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a href="login.html" class="header__bottom-link header__bottom-genre-link"
+                >Đăng nhập</a
+              >
+            </li>
+            <li class="header__bottom-item">
+              <a href="register.html" class="header__bottom-link header__bottom-genre-link"
+                >Đăng ký</a
+              >
+            </li>
+          </ul>
+        </button>   
+    </div>
+    </div>
+    <!-- CONTACT -->
     <div class="contact">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 d-flex align-items-center">
-                    <div class="contact__body">
-                        <h2 class="contact__text-heading">Liên hệ với chúng tôi</h2>
-                        <div class="contact__text-body">
-                            <!-- <p class="">
-                                Sói cô độc luôn lắng nghe và tiếp nhận mọi ý kiến ​đóng góp của bạn. Hãy liên hệ với chúng mình bằng cách điền thông tin vào form dưới đây. Chúng mình sẽ phản hồi bạn trong thời gian sớm nhất.
-                            </p> -->
-                        </div>
-                        <div class="form">
-                            <form action="" method="post">
-                                <div class="form__group field">
-                                    <input type="text" class="form__field name" placeholder="Họ và tên" required="true">
-                                    <label for="name" class="form__label">Họ và tên</label>
-                                </div>
-                                <div class="form__group field">
-                                    <input type="text" class="form__field email" placeholder="Email" required="true">
-                                    <label for="name" class="form__label">Email</label>
-                                </div>
-                                <div class="form__group field">
-                                    <input type="text" class="form__field" placeholder="Số điện thoại" required="true">
-                                    <label for="name" class="form__label">Số điện thoại</label>
-                                </div>
-                                <div class="form__content">
-                                    <label class="form__content-lable">Nội dung</label>
-                                    <div class="form__content-input">
-                                        <textarea rows="4" name="" id="" placeholder="Nhập nội dung liên hệ..." required></textarea>
+        <div class="container-fluid mb-5">
+            <div class="container">
+                <div class="contact__body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 d-flex flex-column align-items-center justify-content-center">
+                                <div class="contact-form delay-2 p-5 d-flex flex-column align-items-center">
+                                    <div class="form__title">
+                                        <h1 class="mb-4">Nhập thông tin liên hệ</h1>
+                                    </div>
+                                    <div class="form">
+                                        <form class="d-flex flex-column align-items-center" action="" method="post">
+                                            <div class="form__content form-floating mb-3">
+                                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                                <label for="floatingInput">Địa chỉ Email</label>
+                                            </div>
+                                            <div class="form__content form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingName" placeholder="Nguyễn Văn A" required>
+                                                <label for="floatingName">Họ tên</label>
+                                            </div>
+                                            <div class="form__content form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingNumber" placeholder="0123456789" required>
+                                                <label for="floatingNumber">Số điện thoại</label>
+                                            </div>
+                                            <div class="form__content form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingTopic" placeholder="" required>
+                                                <label for="floatingTopic">Chủ đề</label>
+                                            </div>
+                                            <div class="form__content">
+                                                <label class="form__content-lable">Nội dung</label>
+                                                <div class="form__content-input">
+                                                    <textarea class="form-control" name="" id=""  placeholder="Nhập nội dung liên hệ..." required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="formt__content form-check mb-3">
+                                                <input class="form-check-input subscribe" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Đăng ký nhận thông tin về xu hướng, những phương pháp giảng dạy, cập nhật sản phẩm, thông tin sự kiện và các ưu đãi.
+                                                </label>
+                                              </div>
+                                            <div class="form__button d-flex justify-content-center">
+                                                <button class="form-btn btn" type="submit">GỬI ĐI</button>
+                                            </div> 
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="form__botton-submit">
-                                    <button class="botton-submit" type="submit">
-                                        <span class="botton-submit-title">GỬI ĐI</span>
-                                    </button>
-                                </div> 
-                            </form>
+                            </div>
+                            <div class="col-xl-6 d-flex flex-column align-items-center justify-content-center">
+                                <div class="contact-img d-flex  align-items-center justify-content-center">
+                                    <img src="../assets/img/Contact-us-rafiki.png" class="img-fluid" id="contact-img-cover" alt="">
+                                </div>
+                                <div class="contact-img-bottom">
+                                    <div class="container">
+                                        <ul class="">
+                                            <li class="col-md-4 li-img-bottom">
+                                                <img 
+                                                    src="https://images.ctfassets.net/2pudprfttvy6/2XqR8ObqoLUWLg9re09bNX/f577e3e2a72b79133226650961636371/tec-de-monterrey-seeklogo.com.svg" 
+                                                    alt="Tecnológico de Monterrey" 
+                                                    class="img-bottom"
+                                                >
+                                            </li>
+                                            <li class="col-md-4 li-img-bottom">
+                                                <img 
+                                                    src="https://images.ctfassets.net/2pudprfttvy6/54lbV33tUKvvBcwNGtckG2/49c39bdb7dc526bf46e28a564768e50e/University_of_Michigan_logo.svg" 
+                                                    alt="University of Michigan" 
+                                                    class="img-bottom"
+                                                >
+                                            </li>
+                                            <li class="col-md-4 li-img-bottom">
+                                                <img 
+                                                    src="https://images.ctfassets.net/2pudprfttvy6/6GkQMj8kJka4rbRfUZssA9/2dff6059d6fd92717503aa1e6bd25a20/Imperial_College_London.svg" 
+                                                    alt="Imperial College London" 
+                                                    class="img-bottom"
+                                                >
+                                            </li>
+                                            <li class="col-md-4 li-img-bottom">
+                                                <img 
+                                                    src="https://images.ctfassets.net/2pudprfttvy6/5xhVcB29RK2Bt6AThlokKU/ccff5cdcf16619740cf6bbff12e0a711/the-university-of-melbourne-vector-logo.png" 
+                                                    alt="The University of Melbourne" 
+                                                    class="img-bottom"
+                                                >
+                                            </li>
+                                            <li class="col-md-4 li-img-bottom">
+                                                <img 
+                                                    src="https://images.ctfassets.net/2pudprfttvy6/4vDQPYaiX1yJ2juCP44eSS/7fb188a6ef815fb09ca1e5dc39467c21/manipal-university-logo.png" 
+                                                    alt="Manipal University" 
+                                                    class="img-bottom"
+                                                >
+                                            </li>
+                                            <li class="col-md-4 li-img-bottom">
+                                                <img 
+                                                    src="https://images.ctfassets.net/2pudprfttvy6/29R4WJGFio5DXNxgm9re49/72e4ae122728f41dffcb32d4095d30bd/nmims-logo.png" 
+                                                    alt="NMIMS" 
+                                                    class="img-bottom"
+                                                >
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="contact__img">
-                        <img src="../assets/img/contact-1.jpg" alt="contact">
-                    </div>
-                </div>
             </div>
-
         </div>
-        
-        
     </div>
-
     <footer class="footer">
 
         <div class="container">
@@ -251,7 +303,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
     
                     <div class="footer__box">
-                        <img src="./assets/img/logo.svg" alt="logo" class="footer__img">
+                        <img src="../assets/img/logo.svg" alt="logo" class="footer__img">
                         <div class="footer__content">
                             <p class="footer__desc">Điện thoại: 08 8989 8989</p>
                             <p class="footer__desc">
@@ -259,7 +311,7 @@
                             </p>
                             <p class="footer__desc">Địa chỉ: Số 999, ngõ 888, Đường Bãi Cát, Quận Bãi Biển, Tỉnh Đại Dương</p>
                         </div>
-                        <img src="./assets/img/copy-write.png" alt="copy-write" class="footer__img">
+                        <img src="../assets/img/copy-write.png" alt="copy-write" class="footer__img">
                     </div>
     
                 </div>
@@ -269,16 +321,16 @@
                         <h2 class="footer__title">Thông tin Course</h2>
                         <ul class="footer__list">
                             <li class="footer__item">
-                                <a href="./index.html" class="footer__link">Trang chủ</a>
+                                <a href="#" class="footer__link">Trang chủ</a>
                             </li>
                             <li class="footer__item">
-                                <a href="#" class="footer__link">Giới thiệu</a>
+                                <a href="./desc.html" class="footer__link">Giới thiệu</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__link">Sản phẩm</a>
+                                <a href="#" class="footer__link">Sản phẩm</a>
                             </li>
                             <li class="footer__item">
-                                <a href="./html/contact.html" class="footer__link">Liên hệ</a>
+                                <a href="#" class="footer__link">Liên hệ</a>
                             </li>
                             <li class="footer__item">
                                 <a href="#" class="footer__link">Điều khoản</a>
