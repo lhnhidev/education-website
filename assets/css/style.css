@@ -10,7 +10,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
+* {
     font-family: var(--font-family);
 }
 
@@ -748,7 +748,7 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
     /* TODO: Footer */
 .footer {
     padding: 80px 0px 60px 0px;
-    background-color: var(--dark-60-color);
+    background-color: #181821;
 }
 
 .footer__img {
@@ -1524,4 +1524,509 @@ a > label.form-check-label{
 }
 .haveAccount {
      margin-left: 0 !important;
+}
+
+/*Class dùng chung*/
+.button_buy-primary-color {
+    background-color: var(--primary-color) !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.button_buy-primary-color:hover {
+    background-color: var(--second-color) !important;
+    transform: .3s;
+}
+
+/*Class dùng chung*/
+.nav__product {
+    z-index: 1000;
+}
+
+.product {
+    color: rgb(112, 110, 110); /* Màu xám nhạt */
+    font-size: 1rem;
+    width: 35rem;
+    padding: 0 !important ;
+    border-radius: 3%;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm transition cho hiệu ứng mượt mà */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Phóng to 5% khi hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Thêm bóng cho card */
+    cursor: pointer;
+}
+
+.product__body {
+    padding: 16px;
+}
+
+.product__body .card-title {
+    font-size: 2rem !important;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.product, .product__detail li {
+    border: none;
+    padding: 8px 16px;
+    background: #ffffff;
+    font-size: 1.6rem;
+}
+
+.product__detail .list-group-item {
+    border: none !important;
+}
+
+.product__buy span {
+    font-size: 27px;
+    font-weight: 600 !important;
+}
+
+.product__price {
+    font-weight: 500 !important;
+    color: var(--primary-color);
+}
+
+.buy_element {
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 14px;
+}
+
+.buy_element.active {
+    border: none;
+    background-color: white !important;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.page-link {
+    font-size: 1.6rem;
+    padding: 8px 16px;
+}
+
+@media screen and (max-width: 1330.98px) {
+    /* TODO: Header */
+    .header__bottom-input {
+        width: 320px;
+    }
+
+    .header__bottom-nav-link {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    /* TODO: Header */
+    .header__bottom-genre > p:first-child {
+        padding: 6px;
+        width: 80px;
+    }
+
+    .header__bottom-section > div {
+        margin: 0px 5px;
+    }
+
+    .header__bottom-input {
+        width: 250px;
+    }
+
+    /* TODO: Banner */
+    .banner__content {
+        margin-left: 0;
+    }
+
+    .banner__title {
+        font-size: 4.2rem;
+        margin-top: 10px;
+    }
+
+    .banner__sign .button {
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    /* TODO: Partner */
+    .partner__img {
+        margin: 0px 7px;
+    }
+
+    /* TODO: Student */
+    .student .container .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .teach__title,
+    .student__title {
+        font-size: 2.5rem;
+    }
+
+    .teach__desc,
+    .student__item {
+        font-size: 1.6rem;
+    }
+
+    .teach__join,
+    .student__btn .button-primary,
+    .student__btn .button-second {
+        font-size: 1.6rem;
+    }
+
+    /* TODO: response */
+    .response__title {
+        font-size: 2.5rem;
+    }
+
+    .response__desc {
+        font-size: 1.8rem;
+    }
+
+    .topic .col-xl-3:last-child {
+        display: none;
+    }
+
+    .contact{
+        margin-top: 30px;
+    }
+    #contact-img-cover{
+        display: none;
+    }
+    .contact-img-bottom{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1081.98px) {
+    /* TODO: Header */
+    .header__bottom-nav {
+        display: none;
+    }
+
+    .header__bottom-genre > p:first-child {
+        padding: 6px 16px;
+        width: 110px;
+    }
+
+    .header__bottom-section > div {
+        margin: 0px 8px;
+    }
+
+    .header__bottom-input {
+        min-width: 380px;
+        width: 40vw;
+    }
+
+    .header__bottom-bar {
+        border: none;
+        display: flex;
+    }
+
+    .header__bottom-list {
+        padding: 0;
+        top: 40px;
+        left: -180px;
+    }
+
+    .header__bottom-item:hover {
+        color: var(--primary-color);
+        transition: .3s;
+        background-color: #F0F6FF;
+    }   
+}
+
+@media screen and (max-width: 991.98px) {
+    /* TODO: Banner */
+    .banner__title {
+        font-size: 2.8rem;
+    }
+
+    .banner__desc {
+        font-size: 1.6rem;
+    }
+
+    .banner__sign .button {
+        padding: 5px 8px;
+        font-size: 1.4rem;
+    }
+
+    .banner__sign .button > i {
+        display: none;
+    }
+
+    /* TODO: Partner */
+    .partner__imgs .partner__img:nth-child(odd) {
+        display: none;
+    }
+
+    .partner__img {
+        margin: 0px 20px;
+    }
+
+    /* TODO: Student */
+    .teach__join,
+    .student__btn .button-primary,
+    .student__btn .button-second {
+        padding: 6px 10px;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    /* TODO: Response */
+    .response__name {
+        font-size: 2rem;
+    }
+
+    .response__message,
+    .response__country {
+        font-size: 1.6rem;
+    }
+
+    .response__horizontal {
+        margin: 10px 0px;
+    }
+
+    .response__main .row .col-xl-4 {
+        margin-bottom: 15px;
+    }
+
+    .topic .col-xl-3:last-child {
+        display: block;
+    }
+
+    .about-us-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .course .row {
+        flex-direction: column-reverse;
+    }
+
+    .skills-img {
+        margin-bottom: 20px;
+    }
+}   
+
+@media screen and (max-width: 834.98px) {
+    /* TODO: Header */
+    .header__bottom-genre > p:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .header {
+        top: 0;
+    }
+
+    .header__top,
+    .header__bottom-cart {
+        display: none;
+    }
+
+    .header__bottom-input {
+        min-width: 250px;
+    }
+
+    .header__bottom-genre-link.cart {
+        display: flex;
+    }
+
+    /* TODO: Banner */
+    .banner .container-fluid .row:first-child {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner__content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .banner__title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .banner__sign {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner__sign .button {
+        padding: 10px 25px;
+    }
+
+    .banner__img {
+        display: none;
+    }
+
+    /* TODO: Student */
+    .teach__img,
+    .student__img {
+        display: none;
+    }
+
+    .about-us-content h1 {
+        text-align: center;
+    }
+
+    .text {
+        text-align: justify;
+    }
+
+    .course .row {
+        flex-direction: column-reverse;
+    }
+
+    .skills {
+        margin-top: 20px;
+    }
+
+    .skills__main {
+        margin: 4rem 4rem;
+    }
+
+    .skills__main p {
+        text-align: justify;
+    }
+
+    .send-number .read-number {
+        width: 160px;
+    }
+
+    .send-number .send {
+        width: 90px;
+    }
+
+    .contact-img-bottom{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    .header__top,
+    .header__bottom-cart,
+    .header__bottom-input {
+        display: none;
+    }
+
+    .header__bottom-search-icon {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        margin-left: 100px;
+        top: -20px;
+        left: -121px;
+        font-size: 2rem;
+    }
+
+    /* TODO: Partner */
+    .partner__imgs {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+
+    .partner__img {
+        margin-bottom: 25px;
+    }
+
+    /* TODO: Course */
+    .course__button .button {
+        margin-bottom: 15px;
+    }
+
+    /* TODO: Student */
+    .student__logo > img {
+        margin: auto;
+        display: block;
+    }
+
+    .teach__title,
+    .student__title {
+        text-align: center;
+    }
+
+    .student__list {
+        margin-left: 10px;
+    }
+
+    .student__btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .course, .topic, .student, .teach {
+        padding: 40px 0px;
+    }
+
+    .teach__join {
+        display: block;
+        margin: auto;
+    }
+
+    /* TODO: Footer */
+    .footer .container .col-12:nth-child(2),
+    .footer .container .col-12:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480.98px) {
+    .consultation > h2 {
+        font-size: 2rem;
+    }
+    
+    .consultation > p {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 455px) {
+    .list li {
+        margin-bottom: 20px;
+        text-align: justify;
+    }  
+    
+    .thing-content .content p {
+        display: none;
+    }
+
+    .thing-content .content h3 {
+        text-align: center;
+    }
+
+    .free-advice h1 {
+        text-align: center;
+    }
+
+    .send-number .read-number {
+        margin-bottom: 10px;
+    }
+
+    .send-number .read-number {
+        width: 150px;
+    }
+
+    .send-number .send {
+        width: 100px;
+    }
+
+    .send-number {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
