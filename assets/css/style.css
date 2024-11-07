@@ -1683,6 +1683,19 @@ a > label.form-check-label{
     padding: 8px 16px;
 }
 
+.noname {
+    margin-bottom: 25px;
+}
+
+.heading__cart {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.para__cart {
+    font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1330.98px) {
     /* TODO: Header */
     .header__bottom-input {
@@ -2027,6 +2040,21 @@ a > label.form-check-label{
 
     .about-us-img img{
         width: calc(100% - 300px);
+    }
+
+    .noname {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .noname-2 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .noname-2 span {
+        margin-right: 8px;
     }
 }
 
