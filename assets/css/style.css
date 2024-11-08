@@ -1682,6 +1682,15 @@ a > label.form-check-label{
     font-size: 1.3rem;
 }
 
+.maps{
+    width: 90%;
+    height: 500px;
+}
+.maps iframe{
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 1330.98px) {
     /* TODO: Header */
     .header__bottom-input {
@@ -1788,6 +1797,10 @@ a > label.form-check-label{
     .about-us-img img{
         width: calc(100% - 100px);
     }
+
+    .maps{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1081.98px) {
@@ -1891,10 +1904,6 @@ a > label.form-check-label{
         display: flex;
         align-items: center;
     }
-
-    /* .course .row {
-        flex-direction: column-reverse;
-    } */
 
     .skills-img {
         margin-bottom: 20px;
@@ -2042,6 +2051,10 @@ a > label.form-check-label{
     .noname-2 span {
         margin-right: 8px;
     }
+
+    .maps{
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 576.98px) {
@@ -2160,6 +2173,12 @@ a > label.form-check-label{
     }
     .contact-img-bottom{
         display: none;
+    }
+
+    .maps{
+        width: 100%;
+        height: 200px;
+        margin-top: 25px;
     }
 }
 
