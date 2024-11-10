@@ -1691,6 +1691,14 @@ a > label.form-check-label{
     height: 100%;
 }
 
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(.85) translateY(-2rem) translateX(.15rem);
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after{
+    height: 1em;
+}
+
 @media screen and (max-width: 1330.98px) {
     /* TODO: Header */
     .header__bottom-input {
