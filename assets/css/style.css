@@ -1985,7 +1985,10 @@ a > label.form-check-label{
     }
 
     .banner__img {
-        display: none;
+        /* display: none; */
+        width: 450px;
+        display: block;
+        margin: auto;
     }
 
     /* TODO: Student */
@@ -2072,6 +2075,10 @@ a > label.form-check-label{
         top: -20px;
         left: -121px;
         font-size: 2rem;
+    }
+
+    .banner__img {
+        width: 300px;
     }
 
     /* TODO: Partner */
@@ -2257,5 +2264,9 @@ a > label.form-check-label{
 
     .formt__group {
           width: 270px;
-      }
+    }
+
+    .banner__img {
+        width: 250px;
+    }
 }

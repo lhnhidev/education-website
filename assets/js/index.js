@@ -413,3 +413,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", displayCartItems);
+
+const inputForm = document.querySelectorAll('.form-floating');
+
+[...inputForm].forEach((ele) => {
+  var inputElement = ele.querySelector('.form-control');
+  var label = ele.querySelector('label');
+  inputElement.addEventListener('blur', () => {
+    if (inputElement.value != '') {
+      Object.assign(label.style, {
+        'backgroundColor': 'transparent',
+        'padding': '5px 10px 0px 10px',
+        'top': '-10px'
+      });
+    }
+    else {
+      Object.assign(label.style, {
+        'backgroundColor': 'transparent',
+        'padding': '10px',
+      });
+    }
+  });
+
+  inputElement.addEventListener('click', () => {
+    if (inputElement.value != '') {
+      label.style.setProperty('top', '0px');
+    }
+  });
+});
