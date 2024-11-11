@@ -901,7 +901,7 @@ body::-webkit-scrollbar-thumb { /* TODO: CSS scrollbar scroll */
 }
 
 .consultation {
-    background-image: url('../img/subscribe-bg.svg');
+    background-image: url('../img/bg-end.jpg');
     background-size: cover;
     width: 100%;
     background-position: center;
